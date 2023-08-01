@@ -1,0 +1,68 @@
+<script setup>
+
+import { HeaderComponent, LinksComponent, AboutComponent, DivisorComponent, SkillsComponent,
+CurriculumComponent, ProjectsComponent, FooterComponent, NavbarComponent } from '../components/';
+
+</script>
+
+<template>
+    <nav>
+      <NavbarComponent />
+    </nav>
+    <HeaderComponent />
+    <section>
+      <LinksComponent />
+    </section>
+    <hr>
+    <section>
+      <AboutComponent />
+    </section>
+
+    <DivisorComponent section="Habilidades" icon-path="/img/skills.svg"/>
+
+    <SkillsComponent />
+
+    <div class="scroll-container">
+      <p>
+        Scroll
+      </p>
+
+      <div class="scroll">
+        <div class="scroll-ball"></div>
+      </div>
+    </div>
+
+    <CurriculumComponent />
+
+    <DivisorComponent section="Projetos" icon-path="/img/projects.svg"/>
+
+    <ProjectsComponent />
+
+    <FooterComponent />
+</template>
+
+<style scoped>
+section {
+  @apply max-w-lg mx-auto mt-4
+}
+
+hr {
+  @apply border border-[#CDCDCD] mx-auto mt-6 w-[384px]
+}
+
+.scroll-ball {
+  @apply w-4 h-4 bg-[#f26800] rounded-full left-0 bottom-0 relative animate-bounce
+}
+
+.scroll {
+  @apply w-8 h-12 rounded-full mx-auto mt-4 border border-[#909090] flex justify-center py-2 items-end
+}
+
+.scroll-container {
+  @apply w-full flex flex-col items-center mt-8
+}
+
+nav {
+  @apply max-w-lg mx-auto py-8
+}
+</style>
