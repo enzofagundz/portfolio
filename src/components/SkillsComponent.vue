@@ -8,31 +8,19 @@
             Enquanto <span>desenvolvedor</span>, possuo conhecimentos em:
         </h1>
         <div class="w-full join join-vertical">
-            <div class="border collapse collapse-arrow join-item">
-                <input type="radio" name="my-accordion-4" checked="checked" />
+            <div class="border join-item">
                 <div class="text-xl font-medium collapse-title">
                     PHP
                 </div>
-                <div class="collapse-content">
-                    <p>hello</p>
-                </div>
             </div>
-            <div class="border collapse collapse-arrow join-item">
-                <input type="radio" name="my-accordion-4" />
+            <div class="border join-item">
                 <div class="text-xl font-medium collapse-title">
                     SQL
                 </div>
-                <div class="collapse-content">
-                    <p>hello</p>
-                </div>
             </div>
-            <div class="border collapse collapse-arrow join-item">
-                <input type="radio" name="my-accordion-4" />
+            <div class="border join-item">
                 <div class="text-xl font-medium collapse-title">
                     JavaScript
-                </div>
-                <div class="collapse-content">
-                    <p>hello</p>
                 </div>
             </div>
         </div>
@@ -52,7 +40,7 @@ span {
     @apply text-[#3943B7]
 }
 
-.collapse {
+.join-item {
     @apply bg-[#1D1D16]
 }
 </style>
