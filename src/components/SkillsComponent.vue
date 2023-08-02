@@ -43,4 +43,10 @@ span {
 .join-item {
     @apply bg-[#1D1D16]
 }
+
+@media (min-width: 1024px) {
+    .skills-container {
+        @apply max-w-2xl
+    }
+}
 </style>

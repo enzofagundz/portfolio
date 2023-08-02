@@ -51,8 +51,13 @@ ul {
     @apply w-[75px] h-[75px] bg-[#f26800] rounded-full flex items-center justify-center animate-bounce
 }
 
-
 article {
     @apply flex flex-row items-center justify-between 
+}
+
+@media (min-width: 1024px) {
+    section {
+        @apply w-[384px] 
+    }
 }
 </style>

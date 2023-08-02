@@ -19,4 +19,14 @@ div {
 svg {
     @apply w-8 h-8
 }
+
+@media (min-width: 1024px) {
+    svg {
+        @apply w-12 h-12
+    }
+
+    div {
+        @apply w-16 h-16
+    }
+}
 </style>

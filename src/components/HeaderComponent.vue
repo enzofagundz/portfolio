@@ -35,4 +35,18 @@ h2 {
 span {
     @apply text-[#F26800]
 }
+
+@media (min-width: 1024px) {
+    .banner-container {
+        @apply max-w-2xl
+    }
+
+    h1 {
+        @apply text-8xl
+    }
+
+    h2 {
+        @apply text-2xl
+    }
+}
 </style>

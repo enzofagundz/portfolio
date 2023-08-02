@@ -12,5 +12,10 @@ svg {
     @apply w-12 h-12 cursor-pointer
 }
 
+@media (min-width: 1024px) {
+    svg {
+        @apply w-16 h-16
+    }
+}
 </style>
 

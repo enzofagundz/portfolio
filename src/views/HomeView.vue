@@ -59,4 +59,13 @@ hr {
   @apply w-full flex flex-col items-center mt-8
 }
 
+@media (min-width: 1024px) {
+  section {
+    @apply max-w-2xl mt-8
+  }
+
+  hr {
+    @apply w-[544px] mt-8
+  }
+}
 </style>
