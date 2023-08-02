@@ -1,14 +1,11 @@
 <script setup>
 
 import { HeaderComponent, LinksComponent, AboutComponent, DivisorComponent, SkillsComponent,
-CurriculumComponent, ProjectsComponent, FooterComponent, NavbarComponent } from '../components/';
+CurriculumComponent, ProjectsComponent } from '../components/';
 
 </script>
 
 <template>
-    <nav>
-      <NavbarComponent />
-    </nav>
     <HeaderComponent />
     <section>
       <LinksComponent />
@@ -38,7 +35,7 @@ CurriculumComponent, ProjectsComponent, FooterComponent, NavbarComponent } from 
 
     <ProjectsComponent />
 
-    <FooterComponent />
+    <!-- <FooterComponent /> -->
 </template>
 
 <style scoped>
@@ -62,7 +59,4 @@ hr {
   @apply w-full flex flex-col items-center mt-8
 }
 
-nav {
-  @apply max-w-lg mx-auto py-8
-}
 </style>

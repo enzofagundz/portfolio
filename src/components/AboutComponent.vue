@@ -57,7 +57,7 @@ button {
 }
 
 button img {
-  @apply mr-2
+  @apply mr-2 rotate-90
 }
 .btn-container {
   @apply flex flex-col mt-4 items-start

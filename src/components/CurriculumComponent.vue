@@ -5,7 +5,7 @@
 <template>
   <section>
     <div>
-      <img src="" alt="">
+      <img src="img/folder-icon.png" alt="">
       <h3>
         Currículo
       </h3>
@@ -17,9 +17,12 @@
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellat architecto, veritatis molestias accusantium tenetur labore. Aspernatur nesciunt praesentium nostrum voluptatum veritatis aliquam hic, quibusdam odit beatae consequatur tempore explicabo.
       </p>
-      <a href="">
+      <router-link to="/curriculum">
+        <span>
+          <img src="img/arrow-horizontal.svg" alt="">
+        </span>
         Ver currículo completo
-      </a>
+      </router-link>
     </div>
   </section>
 </template>
@@ -50,6 +53,11 @@ section div:last-child p {
 }
 
 section div:last-child a {
-  @apply border-2 border-[#e2e2e2] rounded-full px-2 py-3 text-base text-[#e2e2e2] font-raleway self-center
+  @apply border-2 border-[#e2e2e2] rounded-full px-2 py-3 text-base text-[#e2e2e2] font-raleway self-center flex items-center justify-center
 }
+
+section div:last-child a span {
+  @apply w-3 h-3 mr-2
+}
+
 </style>
