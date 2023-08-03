@@ -41,11 +41,11 @@
 }
 
 p {
-    @apply text-white font-gothic
+    @apply text-[#e3e3e3] font-gothic
 }
 
 h1 {
-  @apply text-4xl font-unbounded text-white -mt-3 tracking-wider
+  @apply text-4xl font-unbounded text-[#e3e3e3] -mt-3 tracking-wider
 }
 
 h2 {
@@ -53,7 +53,7 @@ h2 {
 }
 
 button {
-  @apply bg-[#f26800] font-raleway text-white font-extralight text-xl px-4 py-2 rounded-full border border-[#909090] flex items-center
+  @apply bg-[#f26800] font-raleway text-white font-extralight text-xl px-4 py-2 rounded-full border border-[#e3e3e3] flex items-center 
 }
 
 button img {

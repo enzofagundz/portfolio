@@ -13,6 +13,6 @@ module.exports = {
       'raleway': ['Raleway', 'sans-serif'],
     }
   },
-  plugins: [require('daisyui')],
+  plugins: [require('daisyui')]
 }
 

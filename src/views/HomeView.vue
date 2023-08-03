@@ -14,28 +14,19 @@ CurriculumComponent, ProjectsComponent } from '../components/';
     <section>
       <AboutComponent />
     </section>
-
     <DivisorComponent section="Habilidades" icon-path="/img/skills.svg"/>
-
     <SkillsComponent />
-
     <div class="scroll-container">
       <p>
         Scroll
       </p>
-
       <div class="scroll">
         <div class="scroll-ball"></div>
       </div>
     </div>
-
     <CurriculumComponent />
-
     <DivisorComponent section="Projetos" icon-path="/img/projects.svg"/>
-
     <ProjectsComponent />
-
-    <!-- <FooterComponent /> -->
 </template>
 
 <style scoped>
@@ -44,7 +35,7 @@ section {
 }
 
 hr {
-  @apply border border-[#CDCDCD] mx-auto mt-6 w-[384px]
+  @apply border border-[#CDCDCD] mx-auto mt-6 w-[384px] 
 }
 
 .scroll-ball {
@@ -52,7 +43,7 @@ hr {
 }
 
 .scroll {
-  @apply w-8 h-12 rounded-full mx-auto mt-4 border border-[#909090] flex justify-center py-2 items-end
+  @apply w-8 h-12 rounded-full mx-auto mt-4 border border-[#d4d4d4] flex justify-center py-2 items-end
 }
 
 .scroll-container {

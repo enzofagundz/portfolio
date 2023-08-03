@@ -1,6 +1,7 @@
 <script setup>
 
-const items = 3;
+const width = window.innerWidth
+const items = width > 1024 ? 6 : 3;
 
 const props = defineProps({
     section: {
@@ -12,6 +13,7 @@ const props = defineProps({
         required: true
     }
 })
+
 </script>
 
 <template>
@@ -33,7 +35,7 @@ const props = defineProps({
 <style scoped>
 
 .divisor-container {
-    @apply my-8 bg-[#e2e2e2] flex flex-row justify-between
+    @apply my-8 flex flex-row justify-between bg-[#26261c]
 }
 
 .text-wrap {

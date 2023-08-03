@@ -49,11 +49,11 @@ section div:last-child h1 {
 }
 
 section div:last-child p {
-  @apply text-base text-[#cdcdcd] font-raleway mb-4
+  @apply text-base text-[#cdcdcd] font-raleway mb-4 
 }
 
 section div:last-child a {
-  @apply border-2 border-[#e2e2e2] rounded-full px-2 py-3 text-base text-[#e2e2e2] font-raleway self-center flex items-center justify-center
+  @apply border-2 border-[#e3e3e3] rounded-full px-2 py-3 text-base text-[#e3e3e3] font-raleway self-center flex items-center justify-center
 }
 
 section div:last-child a span {

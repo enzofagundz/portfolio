@@ -17,7 +17,13 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/CurriculumView.vue')
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+      return {
+        el: '#curriculum',
+        top: -10
+      }
+  }
 })
 
 export default router

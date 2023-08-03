@@ -13,5 +13,4 @@ import { NavbarComponent, FooterComponent } from './components';
 </template>
 
 <style scoped>
-
 </style>

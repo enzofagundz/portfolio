@@ -8,17 +8,17 @@
             Enquanto <span>desenvolvedor</span>, possuo conhecimentos em:
         </h1>
         <div class="w-full join join-vertical">
-            <div class="border join-item">
+            <div class="join-item">
                 <div class="text-xl font-medium collapse-title">
                     PHP
                 </div>
             </div>
-            <div class="border join-item">
+            <div class="join-item">
                 <div class="text-xl font-medium collapse-title">
                     SQL
                 </div>
             </div>
-            <div class="border join-item">
+            <div class="join-item">
                 <div class="text-xl font-medium collapse-title">
                     JavaScript
                 </div>
@@ -33,7 +33,7 @@
 }
 
 h1 {
-    @apply text-4xl font-raleway text-[#f9f9f9] mb-8
+    @apply text-4xl font-raleway text-[#e3e3e3] mb-8
 }
 
 span {
@@ -41,7 +41,7 @@ span {
 }
 
 .join-item {
-    @apply bg-[#1D1D16]
+    @apply bg-[#1D1D16] border border-[#e3e3e3]
 }
 
 @media (min-width: 1024px) {

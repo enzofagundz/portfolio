@@ -50,7 +50,7 @@
 
 <style scoped>
 h1 {
-    @apply text-5xl text-center font-unbounded text-[#fff] font-bold
+    @apply text-5xl text-center font-unbounded text-[#e3e3e3] font-bold
 }
 
 aside {
@@ -58,7 +58,7 @@ aside {
 }
 
 .subjects-nav {
-    @apply bg-[#1d1d16] border-2 border-[#cdcdcd] rounded-lg py-4 flex justify-around
+    @apply bg-[#1d1d16] border-2 border-b-[#cdcdcd] rounded-lg py-4 flex justify-around rounded-t-lg 
 }
 
 .subjects-nav>div {
@@ -74,7 +74,7 @@ aside {
 }
 
 .subjects-nav>div>h3 {
-    @apply text-[#fff] font-raleway text-sm mt-1
+    @apply text-[#e3d3e3] font-raleway text-sm mt-1
 }
 
 .story {
