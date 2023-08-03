@@ -24,11 +24,11 @@ import { WeatherComponent, GithubIcon, LinkedInIcon, CurriculumIcon } from './';
                 </li>
             </ul>
         </section>
-        <a href="#" class="button-down">
+        <router-link :to="{path: '/', hash: '#about'}" class="button-down">
             <div class="icon-btn">
                 <img src="img/arrow-down.svg" alt="">
             </div>
-        </a>
+        </router-link>
 
         <WeatherComponent />
     </article>

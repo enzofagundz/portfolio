@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="skills-container">
+    <div class="skills-container" id="skills">
         <h1>
             Enquanto <span>desenvolvedor</span>, possuo conhecimentos em:
         </h1>

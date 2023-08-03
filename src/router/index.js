@@ -18,11 +18,15 @@ const router = createRouter({
       component: () => import('../views/CurriculumView.vue')
     }
   ],
-  scrollBehavior (to, from, savedPosition) {
-      return {
-        el: '#curriculum',
-        top: -10
-      }
+  scrollBehavior (to) {
+      if (to.hash) {
+        return {
+          el: to.hash,
+          behavior: 'smooth'
+        }
+      } 
+      
+      return { top: 0, left: 0 }
   }
 })
 

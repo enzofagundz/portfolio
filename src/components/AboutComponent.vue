@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <header class="banner-container">
+  <header class="banner-container" id="about">
     <div>
       <p>
         Sobre
@@ -18,18 +18,18 @@
     <div class="btn-container">
       <button>
         <img src="img/arrow-horizontal.svg" alt="">
-        Habilidades
+        <router-link :to="{path: '/', hash: '#skills'}">Habilidades</router-link>
       </button>
       <button>
         <img src="img/arrow-horizontal.svg" alt="">
-        Trabalhos
+        <router-link :to="{path: '/', hash: '#projects'}">Trabalhos</router-link>
       </button>
     </div>
   </header>
   <div class="out-container">
     <button class="out-button">
       <img src="img/arrow-horizontal.svg" alt="">
-      Currículo
+      <router-link :to="{path: '/', hash: '#curriculum'}">Currículo</router-link>
     </button>
     <hr>
   </div>

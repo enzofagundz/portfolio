@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <section>
+  <section id="curriculum">
     <div>
       <img src="img/folder-icon.png" alt="">
       <h3>

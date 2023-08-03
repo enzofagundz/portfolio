@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section>
+    <section id="projects">
         <h1>
             // Projetos
         </h1>
