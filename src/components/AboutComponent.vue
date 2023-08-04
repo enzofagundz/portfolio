@@ -94,5 +94,9 @@ hr {
   .banner-container {
     @apply max-w-2xl
   }
+
+  .out-button {
+    @apply w-[150px]
+  }
 }
 </style>
