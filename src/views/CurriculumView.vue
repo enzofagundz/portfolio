@@ -9,7 +9,7 @@ const informationStore = useInformationStore();
   <section>
     <header>
       <div>
-        <img src="img/profile.png" alt="">
+        <img src="../../public/img/profile.png" alt="">
       </div>
       <aside>
         <h1>
@@ -100,7 +100,7 @@ const informationStore = useInformationStore();
     <footer>
       <a href="/documents/curriculo.pdf" class="icon" download="Currículo Enzo Fagundes">
         <span>
-          <img src="img/arrow-horizontal.svg" alt="">
+          <img src="../../public/img/arrow-horizontal.svg" alt="">
         </span>
         Baixar currículo em PDF
       </a>

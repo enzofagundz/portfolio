@@ -17,18 +17,18 @@
     </div>
     <div class="btn-container">
       <button>
-        <img src="img/arrow-horizontal.svg" alt="">
+        <img src="../../public/img/arrow-horizontal.svg" alt="">
         <router-link :to="{path: '/', hash: '#skills'}">Habilidades</router-link>
       </button>
       <button>
-        <img src="img/arrow-horizontal.svg" alt="">
+        <img src="../../public/img/arrow-horizontal.svg" alt="">
         <router-link :to="{path: '/', hash: '#projects'}">Trabalhos</router-link>
       </button>
     </div>
   </header>
   <div class="out-container">
     <button class="out-button">
-      <img src="img/arrow-horizontal.svg" alt="">
+      <img src="../../public/img/arrow-horizontal.svg" alt="">
       <router-link :to="{path: '/', hash: '#curriculum'}">Currículo</router-link>
     </button>
     <hr>

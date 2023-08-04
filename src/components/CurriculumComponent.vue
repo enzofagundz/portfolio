@@ -5,7 +5,7 @@
 <template>
   <section id="curriculum">
     <div>
-      <img src="img/folder-icon.png" alt="">
+      <img src="../../public/img/folder-icon.png" alt="">
       <h3>
         Currículo
       </h3>
@@ -25,7 +25,7 @@
       </p>
       <router-link to="/curriculum">
         <span>
-          <img src="img/arrow-horizontal.svg" alt="">
+          <img src="../../public/img/arrow-horizontal.svg" alt="">
         </span>
         Ver currículo completo
       </router-link>

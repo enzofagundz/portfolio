@@ -6,7 +6,7 @@
     <footer>
         <div id="footer-container">
             <div>
-                <img src="/img/logo-fateclins.png" alt="">
+                <img src="../../public/img/logo-fateclins.png" alt="">
             </div>
             <div>
                 <div>
@@ -25,7 +25,7 @@
                     Desenvolvido por <a href="">Enzo Fagundes</a>
                 </p>
             </section>
-            <img src="img/sistemas.png" alt="">
+            <img src="../../public/img/sistemas.png" alt="">
         </div>
     </footer>
 </template>

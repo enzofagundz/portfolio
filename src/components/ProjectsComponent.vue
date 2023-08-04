@@ -14,7 +14,7 @@ const projectsStore = useProjectsStore();
         <nav class="subjects-nav">
             <div v-for="project in projectsStore.projects" :key="project.id" >
                 <div>
-                    <img src="/img/profile-icon.svg" alt="">
+                    <img src="../../public/img/profile-icon.svg" alt="">
                 </div>
                 <a :href="`#item${project.id}`">
                     Projeto {{ project.id }}
@@ -33,7 +33,7 @@ const projectsStore = useProjectsStore();
                         </p>
                     </header>
                     <figure class="img-mockup">
-                        <img src="img/mockup.png" alt="">
+                        <img src="../../public/img/mockup.png" alt="">
                     </figure>
                     <footer>
                         <ul class="tags">

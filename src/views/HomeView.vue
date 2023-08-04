@@ -14,7 +14,7 @@ CurriculumComponent, ProjectsComponent } from '../components/';
     <section>
       <AboutComponent />
     </section>
-    <DivisorComponent section="Habilidades" icon-path="/img/skills.svg"/>
+    <DivisorComponent section="Habilidades" icon-path="../../public/img/skills.svg"/>
     <SkillsComponent />
     <div class="scroll-container">
       <p>
@@ -25,7 +25,7 @@ CurriculumComponent, ProjectsComponent } from '../components/';
       </div>
     </div>
     <CurriculumComponent />
-    <DivisorComponent section="Projetos" icon-path="/img/projects.svg"/>
+    <DivisorComponent section="Projetos" icon-path="../../public/img/projects.svg"/>
     <ProjectsComponent />
 </template>
 
