@@ -62,13 +62,10 @@ button img {
 .btn-container {
   @apply flex flex-col mt-4 items-start
 }
-/* Selecionar o primeiro botão dentro do .btn-container */
 
 .btn-container button:first-child {
   @apply mb-[10px]
 }
-
-/* Selecionar o segundo botão dentro do .btn-container */
 
 .btn-container button:nth-child(2) {
   @apply mb-[5px]
@@ -89,6 +86,10 @@ hr {
 @media (min-width: 475px) {
   button {
     @apply text-lg
+  }
+
+  button img {
+    @apply w-3 h-auto
   }
 }
 
