@@ -51,7 +51,7 @@ span {
 }
 
 .item {
-    @apply bg-[#1D1D16] border border-[#e3e3e3] rounded-lg p-4
+    @apply bg-[#1D1D16] border border-[#e3e3e3] rounded-lg p-4 cursor-pointer
 }
 
 .item div {
@@ -60,6 +60,14 @@ span {
 
 .items-container {
     @apply grid grid-cols-2 gap-4
+}
+
+.item:hover {
+    @apply border-[#3943B7] transition duration-500 ease-in-out
+}
+
+.item:hover div{
+    @apply text-[#3943B7] transition duration-500 ease-in-out
 }
 
 @media (min-width: 768px) {
