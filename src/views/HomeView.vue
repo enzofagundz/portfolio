@@ -35,7 +35,7 @@ section {
 }
 
 hr {
-  @apply border border-[#CDCDCD] mx-auto mt-6 w-[384px] 
+  @apply border border-[#CDCDCD] mx-auto my-6 max-w-xs
 }
 
 .scroll-ball {
@@ -50,13 +50,23 @@ hr {
   @apply w-full flex flex-col items-center mt-8
 }
 
+@media (min-width: 768px) {
+  section {
+    @apply max-w-lg
+  }
+
+  hr {
+    @apply max-w-md
+  }
+}
+
 @media (min-width: 1024px) {
   section {
     @apply max-w-2xl mt-8
   }
 
   hr {
-    @apply w-[544px] mt-8
+    @apply w-[544px] my-8
   }
 }
 </style>

@@ -42,6 +42,12 @@ nav {
     @apply max-w-sm mx-auto py-8
 }
 
+@media (min-width: 768px) {
+    nav {
+        @apply max-w-lg
+    }
+}
+
 @media (min-width: 1024px) {
     nav {
         @apply max-w-2xl

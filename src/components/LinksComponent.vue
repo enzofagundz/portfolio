@@ -55,6 +55,18 @@ article {
     @apply flex flex-row items-center justify-between 
 }
 
+@media (min-width: 768px) {
+    .icon-btn {
+        @apply w-[75px] h-[75px]
+    }
+    
+    section {
+        @apply w-[300px] 
+    }
+
+    
+}
+
 @media (min-width: 1024px) {
     section {
         @apply w-[384px] 

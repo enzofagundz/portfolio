@@ -110,7 +110,7 @@ const informationStore = useInformationStore();
 
 <style scoped>
 section {
-  @apply mx-auto max-w-lg bg-[#1d1d16] p-4 rounded-xl border-2 border-[#cdcdcd]
+  @apply mx-auto max-w-sm bg-[#1d1d16] p-4 rounded-xl border-2 border-[#cdcdcd]
 }
 
 header {
@@ -164,5 +164,17 @@ footer > a {
 
 footer> a span {
   @apply mr-2
+}
+
+@media (min-width: 768px) {
+  section {
+    @apply max-w-lg
+  }
+}
+
+@media (min-width: 1024px) {
+  section {
+    @apply max-w-2xl
+  }
 }
 </style>

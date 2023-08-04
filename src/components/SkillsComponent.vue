@@ -62,6 +62,12 @@ span {
     @apply grid grid-cols-2 gap-4
 }
 
+@media (min-width: 768px) {
+    .skills-container {
+        @apply max-w-lg
+    } 
+}
+
 @media (min-width: 1024px) {
     .skills-container {
         @apply max-w-2xl
