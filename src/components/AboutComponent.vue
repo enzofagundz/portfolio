@@ -12,7 +12,7 @@
         mim
       </h1>
       <h2>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Para me conhecer melhor, veja minhas habilidades, trabalhos e currículo.
       </h2>
     </div>
     <div class="btn-container">

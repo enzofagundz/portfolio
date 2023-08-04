@@ -16,8 +16,6 @@
                     <ul tabindex="0"
                         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         <li><a href="https://www.fateclins.edu.br/web/" target="_blank">Fatec</a></li>
-                        <li><a>Sobre mim</a></li>
-                        <li><a>Projetos</a></li>
                         <li><router-link to="/curriculum">Currículo</router-link></li>
                     </ul>
                 </div>

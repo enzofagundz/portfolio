@@ -8,7 +8,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       'sans': ['Anybody', 'sans-serif'],
-      'gothic': ['Pathway Gothic One', 'sans-serif'],
+      'gothic': ['Carrois Gothic', 'sans-serif'],
       'unbounded': ['Unbounded', 'sans-serif'],
       'raleway': ['Raleway', 'sans-serif'],
     }

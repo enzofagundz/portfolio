@@ -1,5 +1,9 @@
 <script setup>
+import { GithubIcon } from './';
 
+import { useProjectsStore } from '../stores/projects';
+
+const projectsStore = useProjectsStore();
 </script>
 
 <template>
@@ -7,42 +11,42 @@
         <h1>
             // Projetos
         </h1>
-        <aside>
-            <nav class="subjects-nav">
+        <nav class="subjects-nav">
+            <div v-for="project in projectsStore.projects" :key="project.id" >
                 <div>
-                    <div>
-                        <img src="/img/profile-icon.svg" alt="">
-                    </div>
-                    <h3>
-                        Matéria 1
-                    </h3>
-
+                    <img src="/img/profile-icon.svg" alt="">
                 </div>
-            </nav>
-            <div>
-                <div class="story">
-                    <nav>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </nav>
-                    <div class="h-full carousel">
-                        <div class="w-full carousel-item">
-                            <img src="https://source.unsplash.com/random" class="w-full"
-                                alt="Tailwind CSS Carousel component" />
-                        </div>
-                        <div class="w-full carousel-item">
-                            <img src="https://source.unsplash.com/random" class="w-full"
-                                alt="Tailwind CSS Carousel component" />
-                        </div>
-                        <div class="w-full carousel-item">
-                            <img src="https://source.unsplash.com/random" class="w-full"
-                                alt="Tailwind CSS Carousel component" />
-                        </div>
-                    </div>
-                </div>
+                <a :href="`#item${project.id}`">
+                    Projeto {{ project.id }}
+                </a>
+            </div>
+        </nav>
+        <aside class="w-full carousel">
+            <div v-for="project in projectsStore.projects" :key="project.id" :id="`item${project.id}`" class="w-full carousel-item">
+                <article class="project">
+                    <header>
+                        <h2>
+                            {{ project.name }}
+                        </h2>
+                        <p>
+                            {{ project.description }}
+                        </p>
+                    </header>
+                    <figure class="img-mockup">
+                        <img src="img/mockup.png" alt="">
+                    </figure>
+                    <footer>
+                        <ul class="tags">
+                            <li v-for="(tag, index) in project.tags" :key="index">
+                                {{ tag }}
+                            </li>
+                        </ul>
+                        <a :href="project.link" class="github-badge" target="_blank">
+                            <GithubIcon color="#e3e3e3" size="w-5" />
+                            <span>Github</span>
+                        </a>
+                    </footer>
+                </article>
             </div>
         </aside>
     </section>
@@ -50,19 +54,23 @@
 
 <style scoped>
 h1 {
-    @apply text-5xl text-center font-unbounded text-[#e3e3e3] font-bold
+    @apply text-5xl text-center font-unbounded text-[#e3e3e3] font-bold mb-8
 }
 
 aside {
-    @apply bg-[#26261c] border-2 border-[#cdcdcd] rounded-lg mt-8
+    @apply bg-[#26261c] border-2 border-[#cdcdcd] rounded-b-lg flex
 }
 
 .subjects-nav {
-    @apply bg-[#1d1d16] border-2 border-b-[#cdcdcd] rounded-lg py-4 flex justify-around rounded-t-lg 
+    @apply bg-[#1d1d16] border-2 border-[#cdcdcd] py-4 flex justify-around rounded-t-lg
 }
 
 .subjects-nav>div {
-    @apply flex flex-col items-center 
+    @apply flex flex-col items-center cursor-pointer
+}
+
+.subjects-nav>div>a {
+    @apply text-[#e3e3e3] font-raleway text-sm mt-1
 }
 
 .subjects-nav>div>div {
@@ -77,19 +85,39 @@ aside {
     @apply text-[#e3d3e3] font-raleway text-sm mt-1
 }
 
-.story {
-    @apply w-[225px] h-[400px] bg-[#d9d9d9] border border-[#454ade] rounded-lg my-6 mx-auto
+.img-mockup {
+    @apply max-w-lg mx-auto
 }
 
-.story>nav {
-    @apply h-[50px] flex justify-around items-center absolute w-[225px]
+.project {
+    @apply flex flex-col items-center justify-center p-8
 }
 
-.story>nav>div {
-    @apply w-7 h-1 bg-[#909090] rounded-full
+.project footer {
+    @apply flex flex-col items-center justify-center
 }
 
-.carousel {
-    @apply rounded-lg
+.github-badge {
+    @apply mt-8 flex items-center bg-[#3943B7] font-gothic px-4 py-2 cursor-pointer rounded-full
+}
+
+.github-badge span {
+    @apply text-[#e3e3e3] font-bold text-sm ml-2 uppercase
+}
+
+.tags {
+    @apply flex justify-center mt-4
+}
+
+.tags li {
+    @apply text-[#575742] font-raleway text-sm mr-2 font-semibold
+}
+
+.project header {
+    @apply text-center
+}
+
+.project header h2 {
+    @apply text-[#F26800] font-bold text-2xl
 }
 </style>

@@ -15,7 +15,13 @@
         Olá, tudo bem?
       </h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis repellat architecto, veritatis molestias accusantium tenetur labore. Aspernatur nesciunt praesentium nostrum voluptatum veritatis aliquam hic, quibusdam odit beatae consequatur tempore explicabo.
+        Sou um desenvolvedor web full stack com paixão por tecnologia e design. 
+      </p>
+      <p>
+        Tenho experiência em gestão de redes sociais, produção de conteúdo e design gráfico, além de formação em Sistemas para Internet e Administração. Possuo vários cursos complementares em áreas relacionadas ao desenvolvimento web e ao marketing digital. Estou em busca de novos desafios e oportunidades na minha área de atuação.
+      </p>
+      <p>
+        Sou um profissional dedicado, criativo e comprometido com a qualidade dos meus projetos, que está sempre se atualizando e aprendendo coisas novas.
       </p>
       <router-link to="/curriculum">
         <span>
