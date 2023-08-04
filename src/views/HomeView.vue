@@ -14,7 +14,7 @@ CurriculumComponent, ProjectsComponent } from '../components/';
     <section>
       <AboutComponent />
     </section>
-    <DivisorComponent section="Habilidades" icon-path="../../public/img/skills.svg"/>
+    <DivisorComponent section="Habilidades" icon-path="/img/skills.svg"/>
     <SkillsComponent />
     <div class="scroll-container">
       <p>
@@ -25,13 +25,13 @@ CurriculumComponent, ProjectsComponent } from '../components/';
       </div>
     </div>
     <CurriculumComponent />
-    <DivisorComponent section="Projetos" icon-path="../../public/img/projects.svg"/>
+    <DivisorComponent section="Projetos" icon-path="/img/projects.svg"/>
     <ProjectsComponent />
 </template>
 
 <style scoped>
 section {
-  @apply max-w-lg mx-auto mt-4
+  @apply max-w-sm mx-auto mt-4
 }
 
 hr {
@@ -57,12 +57,6 @@ hr {
 
   hr {
     @apply w-[544px] mt-8
-  }
-}
-
-@media (min-width: 475px) {
-  section {
-    @apply max-w-sm
   }
 }
 </style>

@@ -43,7 +43,7 @@ const props = defineProps({
 }
 
 p {
-    @apply text-2xl font-raleway text-[#8B8BFF] ml-2
+    @apply text-xl font-raleway text-[#8B8BFF] ml-2
 }
 
 img {

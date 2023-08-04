@@ -39,13 +39,7 @@
 }
 
 nav {
-    @apply max-w-lg mx-auto py-8
-}
-
-@media (min-width: 475px) {
-  nav {
-    @apply max-w-sm
-  }
+    @apply max-w-sm mx-auto py-8
 }
 
 @media (min-width: 1024px) {

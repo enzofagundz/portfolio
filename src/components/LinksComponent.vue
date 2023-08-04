@@ -48,21 +48,11 @@ ul {
 }
 
 .icon-btn {
-    @apply w-[75px] h-[75px] bg-[#f26800] rounded-full flex items-center justify-center animate-bounce
+    @apply w-[50px] h-[50px] bg-[#f26800] rounded-full flex items-center justify-center animate-bounce
 }
 
 article {
     @apply flex flex-row items-center justify-between 
-}
-
-@media (min-width: 475px) {
-    .icon-btn {
-        @apply w-[50px] h-[50px]
-    }
-
-    section {
-        @apply p-2
-    }
 }
 
 @media (min-width: 1024px) {

@@ -17,11 +17,11 @@
 
 <style scoped>
 .banner-container {
-    @apply max-w-lg mx-auto bg-[#1D1D16] rounded-lg border-2 border-[#CDCDCD] flex flex-col justify-center items-center
+    @apply max-w-sm mx-auto bg-[#1D1D16] rounded-lg border-2 border-[#CDCDCD] flex flex-col justify-center items-center
 }
 
 h1 {
-    @apply text-7xl font-extrabold font-sans p-4 tracking-tight
+    @apply text-6xl font-extrabold font-sans p-4 tracking-tight
 }
 
 .header-container {
@@ -34,16 +34,6 @@ h2 {
 
 span {
     @apply text-[#F26800]
-}
-
-@media (min-width: 475px) {
-  .banner-container {
-    @apply max-w-sm
-  }
-
-    h1 {
-        @apply text-6xl
-    }
 }
 
 @media (min-width: 1024px) {

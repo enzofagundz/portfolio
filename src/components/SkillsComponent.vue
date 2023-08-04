@@ -7,29 +7,29 @@
         <h1>
             Enquanto <span>desenvolvedor</span>, possuo conhecimentos em:
         </h1>
-        <div class="join-item">
-            <div class="text-xl font-medium collapse-title">
-                JavaScript
+        <div class="items-container">
+            <div class="item">
+                <div>
+                    JavaScript
+                </div>
             </div>
-        </div>
-        <div class="join-item">
-            <div class="text-xl font-medium collapse-title">
-                Vue.js
+            <div class="item">
+                <div>
+                    Vue.js
+                </div>
             </div>
-        </div>
-        <div class="join-item">
-            <div class="text-xl font-medium collapse-title">
-                Node.js
+            <div class="item">
+                <div>
+                    Node.js
+                </div>
             </div>
-        </div>
-        <div class="w-full join join-vertical">
-            <div class="join-item">
-                <div class="text-xl font-medium collapse-title">
+            <div class="item">
+                <div>
                     PHP
                 </div>
             </div>
-            <div class="join-item">
-                <div class="text-xl font-medium collapse-title">
+            <div class="item">
+                <div>
                     SQL
                 </div>
             </div>
@@ -39,7 +39,7 @@
 
 <style scoped>
 .skills-container {
-    @apply max-w-lg mx-auto mt-8
+    @apply max-w-sm mx-auto mt-8
 }
 
 h1 {
@@ -50,14 +50,16 @@ span {
     @apply text-[#3943B7]
 }
 
-.join-item {
-    @apply bg-[#1D1D16] border border-[#e3e3e3]
+.item {
+    @apply bg-[#1D1D16] border border-[#e3e3e3] rounded-lg p-4
 }
 
-@media (min-width: 475px) {
-    .skills-container {
-        @apply max-w-sm
-    }
+.item div {
+    @apply text-[#e3e3e3] text-xl font-medium
+}
+
+.items-container {
+    @apply grid grid-cols-2 gap-4
 }
 
 @media (min-width: 1024px) {

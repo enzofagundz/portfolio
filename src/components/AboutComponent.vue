@@ -53,11 +53,11 @@ h2 {
 }
 
 button {
-  @apply bg-[#f26800] font-raleway text-white font-extralight text-xl px-4 py-2 rounded-full border border-[#e3e3e3] flex items-center 
+  @apply bg-[#f26800] font-raleway text-white font-extralight text-lg px-4 py-2 rounded-full border border-[#e3e3e3] flex items-center 
 }
 
 button img {
-  @apply mr-2 rotate-90
+  @apply mr-2 rotate-90 w-3 h-auto
 }
 .btn-container {
   @apply flex flex-col mt-4 items-start
@@ -81,16 +81,6 @@ button img {
 
 hr {
   @apply border-[#CDCDCD] border-t-2 w-full mt-3 ml-2
-}
-
-@media (min-width: 475px) {
-  button {
-    @apply text-lg
-  }
-
-  button img {
-    @apply w-3 h-auto
-  }
 }
 
 @media (min-width: 1024px) {

@@ -86,7 +86,7 @@ aside {
 }
 
 .img-mockup {
-    @apply max-w-lg mx-auto
+    @apply max-w-sm mx-auto
 }
 
 .project {
