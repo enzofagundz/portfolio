@@ -13,15 +13,17 @@ const projectsStore = useProjectsStore();
         </h1>
         <nav class="subjects-nav">
             <div v-for="project in projectsStore.projects" :key="project.id" >
-                <div>
-                    <img src="../../public/img/profile-icon.svg" alt="">
-                </div>
                 <a :href="`#item${project.id}`">
-                    Projeto {{ project.id }}
+                    <div>
+                        <img src="../../public/img/profile-icon.svg" alt="">
+                    </div>
+                    <p>
+                        Projeto {{ project.id }}
+                    </p>
                 </a>
             </div>
         </nav>
-        <aside class="w-full carousel">
+        <aside class="overflow-hidden">
             <div v-for="project in projectsStore.projects" :key="project.id" :id="`item${project.id}`" class="w-full carousel-item">
                 <article class="project">
                     <header>
@@ -69,20 +71,16 @@ aside {
     @apply flex flex-col items-center cursor-pointer
 }
 
-.subjects-nav>div>a {
+.subjects-nav>div a p {
     @apply text-[#e3e3e3] font-raleway text-sm mt-1
 }
 
-.subjects-nav>div>div {
+.subjects-nav>div a div {
     @apply w-[3.8rem] h-[3.8rem] rounded-full bg-gradient-to-r from-[#f26800] to-[#fbae17] flex justify-center items-center
 }
 
-.subjects-nav>div>div>img {
+.subjects-nav>div a img {
     @apply w-14 h-14 rounded-full bg-[#afafaf]
-}
-
-.subjects-nav>div>h3 {
-    @apply text-[#e3d3e3] font-raleway text-sm mt-1
 }
 
 .img-mockup {
@@ -90,7 +88,7 @@ aside {
 }
 
 .project {
-    @apply flex flex-col items-center justify-center p-8
+    @apply flex flex-col items-center justify-center p-8 w-full
 }
 
 .project footer {
