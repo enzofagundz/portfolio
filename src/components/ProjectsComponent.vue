@@ -1,7 +1,7 @@
 <script setup>
 import { GithubIcon } from './';
 
-import { useProjectsStore } from '../stores/projects';
+import { useProjectsStore } from '@/stores/projects';
 
 const projectsStore = useProjectsStore();
 </script>
@@ -15,7 +15,7 @@ const projectsStore = useProjectsStore();
             <div v-for="project in projectsStore.projects" :key="project.id" >
                 <a :href="`#item${project.id}`">
                     <div>
-                        <img src="../../public/img/profile-icon.svg" alt="">
+                        <img :src="project.image" alt="">
                     </div>
                     <p>
                         Projeto {{ project.id }}
