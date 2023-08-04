@@ -7,6 +7,21 @@
         <h1>
             Enquanto <span>desenvolvedor</span>, possuo conhecimentos em:
         </h1>
+        <div class="join-item">
+            <div class="text-xl font-medium collapse-title">
+                JavaScript
+            </div>
+        </div>
+        <div class="join-item">
+            <div class="text-xl font-medium collapse-title">
+                Vue.js
+            </div>
+        </div>
+        <div class="join-item">
+            <div class="text-xl font-medium collapse-title">
+                Node.js
+            </div>
+        </div>
         <div class="w-full join join-vertical">
             <div class="join-item">
                 <div class="text-xl font-medium collapse-title">
@@ -16,11 +31,6 @@
             <div class="join-item">
                 <div class="text-xl font-medium collapse-title">
                     SQL
-                </div>
-            </div>
-            <div class="join-item">
-                <div class="text-xl font-medium collapse-title">
-                    JavaScript
                 </div>
             </div>
         </div>
@@ -45,9 +55,9 @@ span {
 }
 
 @media (min-width: 475px) {
-  .skills-container {
-    @apply max-w-sm
-  }
+    .skills-container {
+        @apply max-w-sm
+    }
 }
 
 @media (min-width: 1024px) {
