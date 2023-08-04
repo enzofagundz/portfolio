@@ -18,18 +18,18 @@
     <div class="btn-container">
       <button>
         <img src="../../public/img/arrow-horizontal.svg" alt="">
-        <router-link :to="{path: '/', hash: '#skills'}">Habilidades</router-link>
+        <router-link :to="{ path: '/', hash: '#skills' }">Habilidades</router-link>
       </button>
       <button>
         <img src="../../public/img/arrow-horizontal.svg" alt="">
-        <router-link :to="{path: '/', hash: '#projects'}">Trabalhos</router-link>
+        <router-link :to="{ path: '/', hash: '#projects' }">Trabalhos</router-link>
       </button>
     </div>
   </header>
   <div class="out-container">
     <button class="out-button">
       <img src="../../public/img/arrow-horizontal.svg" alt="">
-      <router-link :to="{path: '/', hash: '#curriculum'}">Currículo</router-link>
+      <router-link :to="{ path: '/', hash: '#curriculum' }">Currículo</router-link>
     </button>
     <hr>
   </div>
@@ -37,11 +37,11 @@
 
 <style scoped>
 .banner-container {
-    @apply max-w-lg mx-auto bg-[#1D1D16] rounded-lg border-2 border-[#CDCDCD] p-4
+  @apply max-w-lg mx-auto bg-[#1D1D16] rounded-lg border-2 border-[#CDCDCD] p-4
 }
 
 p {
-    @apply text-[#e3e3e3] font-gothic
+  @apply text-[#e3e3e3] font-gothic
 }
 
 h1 {
@@ -53,12 +53,13 @@ h2 {
 }
 
 button {
-  @apply bg-[#f26800] font-raleway text-white font-extralight text-lg px-4 py-2 rounded-full border border-[#e3e3e3] flex items-center 
+  @apply bg-[#f26800] font-raleway text-white font-extralight text-lg px-4 py-2 rounded-full border border-[#e3e3e3] flex items-center
 }
 
 button img {
   @apply mr-2 rotate-90 w-3 h-auto
 }
+
 .btn-container {
   @apply flex flex-col mt-4 items-start
 }
@@ -81,6 +82,12 @@ button img {
 
 hr {
   @apply border-[#CDCDCD] border-t-2 w-full mt-3 ml-2
+}
+
+@media (min-width: 768px) {
+  .out-button {
+    @apply w-[160px]
+  }
 }
 
 @media (min-width: 1024px) {
