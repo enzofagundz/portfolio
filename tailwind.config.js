@@ -11,6 +11,7 @@ module.exports = {
       'gothic': ['Carrois Gothic', 'sans-serif'],
       'unbounded': ['Unbounded', 'sans-serif'],
       'raleway': ['Raleway', 'sans-serif'],
+      'roboto': ['Roboto', 'sans-serif'],
     },
     screens: {
       'xs': '475px'

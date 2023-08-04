@@ -1,9 +1,15 @@
 <script setup>
-import { GithubIcon } from './';
+import { ref } from 'vue';
+import { useProjectStore } from '../stores/projects';
+const projectStore = useProjectStore();
 
-import { useProjectsStore } from '@/stores/projects';
+import { LinkIcon } from './';
 
-const projectsStore = useProjectsStore();
+const color = ref('#1E96E6');
+
+const changeColor = () => {
+    color.value =  color.value == '#1E96E6' ? '#fff' : '#1E96E6';
+}
 </script>
 
 <template>
@@ -11,111 +17,103 @@ const projectsStore = useProjectsStore();
         <h1>
             // Projetos
         </h1>
-        <nav class="subjects-nav">
-            <div v-for="project in projectsStore.projects" :key="project.id" >
-                <a :href="`#item${project.id}`">
-                    <div>
+
+        <div class="carousel carousel-center">
+            <div 
+                class="carousel-item"
+                v-for="project in projectStore.projects"
+                :key="project.id"
+            >
+                <header>
+                    <figure>
                         <img :src="project.image" alt="">
-                    </div>
-                    <p>
-                        Projeto {{ project.id }}
-                    </p>
-                </a>
-            </div>
-        </nav>
-        <aside class="overflow-hidden">
-            <div v-for="project in projectsStore.projects" :key="project.id" :id="`item${project.id}`" class="w-full carousel-item">
-                <article class="project">
-                    <header>
-                        <h2>
-                            {{ project.name }}
-                        </h2>
-                        <p>
-                            {{ project.description }}
-                        </p>
-                    </header>
-                    <figure class="img-mockup">
-                        <img src="../../public/img/mockup.png" alt="">
                     </figure>
-                    <footer>
-                        <ul class="tags">
-                            <li v-for="(tag, index) in project.tags" :key="index">
-                                {{ tag }}
-                            </li>
-                        </ul>
-                        <a :href="project.link" class="github-badge" target="_blank">
-                            <GithubIcon color="#e3e3e3" size="w-5" />
-                            <span>Github</span>
-                        </a>
-                    </footer>
+                    <p>
+                        {{ project.name }}
+                    </p>
+                </header>
+                <article>
+                    <p>
+                        {{ project.description }}
+                    </p>
+                    <figure>
+                        <img :src="project.mockup" alt="">
+                    </figure>
                 </article>
+                <footer>
+                    <p>
+                        Conheça mais sobre o projeto:
+                    </p>
+                    <a :href="project.link" target="_blank" @mouseenter="changeColor" @mouseleave="changeColor">
+                        <LinkIcon :color="color" size="w-5" />
+                        Github
+                    </a>
+                </footer>
             </div>
-        </aside>
+
+        </div>
     </section>
 </template>
 
 <style scoped>
+
+#projects {
+    @apply flex flex-col items-center justify-center space-y-8
+}
+
 h1 {
     @apply text-5xl text-center font-unbounded text-[#e3e3e3] font-bold mb-8
 }
 
-aside {
-    @apply bg-[#26261c] border-2 border-[#cdcdcd] rounded-b-lg flex
+.carousel {
+    @apply bg-[#454ade] rounded-box max-w-xs overflow-hidden p-4
 }
 
-.subjects-nav {
-    @apply bg-[#1d1d16] border-2 border-[#cdcdcd] py-4 flex justify-around rounded-t-lg
+.carousel-item {
+    @apply p-4 bg-[#14140F] rounded-lg border-2 border-[#cdcdcd] flex flex-col justify-between w-[225px] h-[400px] m-4
 }
 
-.subjects-nav>div {
-    @apply flex flex-col items-center cursor-pointer
+.carousel-item header {
+    @apply flex flex-row items-center mb-2
 }
 
-.subjects-nav>div a p {
-    @apply text-[#e3e3e3] font-raleway text-sm mt-1
+.carousel-item header figure {
+    @apply w-8 h-8 mr-2
 }
 
-.subjects-nav>div a div {
-    @apply w-[3.8rem] h-[3.8rem] rounded-full bg-gradient-to-r from-[#f26800] to-[#fbae17] flex justify-center items-center
+.carousel-item header p {
+    @apply font-bold text-[#d9d9d9] text-sm
 }
 
-.subjects-nav>div a img {
-    @apply w-14 h-14 rounded-full bg-[#afafaf]
+.carousel-item article {
+    @apply w-full h-full flex flex-col items-center justify-center font-roboto
 }
 
-.img-mockup {
-    @apply max-w-sm mx-auto
+.carousel-item article p {
+    @apply text-[#d9d9d9] text-base text-center mb-4
 }
 
-.project {
-    @apply flex flex-col items-center justify-center p-8 w-full
+.carousel-item article figure {
+    @apply w-[200px] h-[200px]
 }
 
-.project footer {
+.carousel-item footer {
     @apply flex flex-col items-center justify-center
 }
 
-.github-badge {
-    @apply mt-8 flex items-center bg-[#3943B7] font-gothic px-4 py-2 cursor-pointer rounded-full
+.carousel-item footer a {
+    @apply flex flex-row items-center justify-center bg-white rounded-md text-[#1E96E6] font-roboto uppercase py-2 px-4 mt-2
 }
 
-.github-badge span {
-    @apply text-[#e3e3e3] font-bold text-sm ml-2 uppercase
+.carousel-item footer a img {
+    @apply w-5 h-5 -rotate-45
 }
 
-.tags {
-    @apply flex justify-center mt-4
+.carousel-item footer a:hover {
+    @apply bg-[#1E96E6] text-white transition duration-500 ease-in-out
 }
 
-.tags li {
-    @apply text-[#575742] font-raleway text-sm mr-2 font-semibold
-}
-
-.project header {
-    @apply text-center
-}
-
-.project header h2 {
-    @apply text-[#F26800] font-bold text-2xl
+.carousel-item footer p {
+    @apply text-[#d9d9d9] text-sm font-roboto text-center
 }
 </style>

@@ -10,4 +10,5 @@ export { default as FooterComponent} from './FooterComponent.vue';
 export { default as NavbarComponent} from './NavbarComponent.vue';
 export { default as GithubIcon} from './icons/GithubIcon.vue';
 export { default as LinkedInIcon} from './icons/LinkedInIcon.vue';
+export { default as LinkIcon} from './icons/LinkIcon.vue';
 export { default as CurriculumIcon} from './icons/CurriculumIcon.vue';
