@@ -37,7 +37,7 @@ const changeColor = () => {
                         {{ project.description }}
                     </p>
                     <figure>
-                        <img :src="projectStore.getMockup(project.id)" alt="">
+                        <img :src="project.mockup" alt="">
                     </figure>
                 </article>
                 <footer>

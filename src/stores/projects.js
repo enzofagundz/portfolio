@@ -41,10 +41,5 @@ export const useProjectStore = defineStore('project', () => {
         }
     ]);
 
-    const getMockup = async (id) => {
-        const project = projects.value.find(project => project.id === id)
-        return project.mockup
-    }
-    
-    return { projects, getMockup }
+    return { projects }
 })
