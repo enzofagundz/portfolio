@@ -44,6 +44,12 @@ span {
     @apply bg-[#1D1D16] border border-[#e3e3e3]
 }
 
+@media (min-width: 475px) {
+  .skills-container {
+    @apply max-w-sm
+  }
+}
+
 @media (min-width: 1024px) {
     .skills-container {
         @apply max-w-2xl

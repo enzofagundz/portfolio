@@ -86,6 +86,12 @@ hr {
   @apply border-[#CDCDCD] border-t-2 w-full mt-3 ml-2
 }
 
+@media (min-width: 475px) {
+  button {
+    @apply text-lg
+  }
+}
+
 @media (min-width: 1024px) {
   .banner-container {
     @apply max-w-2xl

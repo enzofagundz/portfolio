@@ -36,6 +36,16 @@ span {
     @apply text-[#F26800]
 }
 
+@media (min-width: 475px) {
+  .banner-container {
+    @apply max-w-sm
+  }
+
+    h1 {
+        @apply text-6xl
+    }
+}
+
 @media (min-width: 1024px) {
     .banner-container {
         @apply max-w-2xl

@@ -11,6 +11,9 @@ module.exports = {
       'gothic': ['Carrois Gothic', 'sans-serif'],
       'unbounded': ['Unbounded', 'sans-serif'],
       'raleway': ['Raleway', 'sans-serif'],
+    },
+    screens: {
+      'xs': '475px'
     }
   },
   plugins: [require('daisyui')]

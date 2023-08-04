@@ -59,4 +59,10 @@ hr {
     @apply w-[544px] mt-8
   }
 }
+
+@media (min-width: 475px) {
+  section {
+    @apply max-w-sm
+  }
+}
 </style>

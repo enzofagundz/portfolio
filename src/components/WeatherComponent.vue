@@ -29,4 +29,14 @@ p {
 span {
   @apply text-2xl
 }
+
+@media (min-width: 475px) {
+  .weather-container {
+    @apply w-16 h-16
+  }
+
+  h1 {
+    @apply text-3xl
+  }
+}
 </style>
