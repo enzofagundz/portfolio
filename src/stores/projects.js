@@ -39,7 +39,12 @@ export const useProjectStore = defineStore('project', () => {
             tags: ['#PHP', '#MVC', '#MySQL', '#Bootstrap'],
             mockup: '../../public/img/mockup-crud.png'
         }
-    ])
+    ]);
 
-    return { projects }
+    const getMockup = async (id) => {
+        const project = projects.value.find(project => project.id === id)
+        return project.mockup
+    }
+    
+    return { projects, getMockup }
 })
