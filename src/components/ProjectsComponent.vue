@@ -70,7 +70,7 @@ h1 {
 }
 
 .carousel-item {
-    @apply p-4 bg-[#14140F] rounded-lg border-2 border-[#cdcdcd] flex flex-col justify-between w-[225px] h-[400px] m-4
+    @apply p-4 rounded-lg border-2 border-[#cdcdcd] flex flex-col justify-between w-[225px] h-[400px] m-4 bg-gradient-to-br from-[#e8b854] to-[#ff0469]
 }
 
 .carousel-item header {
@@ -82,7 +82,7 @@ h1 {
 }
 
 .carousel-item header p {
-    @apply font-bold text-[#d9d9d9] text-sm
+    @apply font-bold text-white text-sm
 }
 
 .carousel-item article {
@@ -90,7 +90,7 @@ h1 {
 }
 
 .carousel-item article p {
-    @apply text-[#d9d9d9] text-base text-center mb-4
+    @apply text-white text-base text-center mb-4
 }
 
 .carousel-item article figure {
@@ -114,6 +114,6 @@ h1 {
 }
 
 .carousel-item footer p {
-    @apply text-[#d9d9d9] text-sm font-roboto text-center
+    @apply text-white text-sm font-roboto text-center
 }
 </style>
