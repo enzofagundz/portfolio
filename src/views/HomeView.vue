@@ -6,17 +6,17 @@ CurriculumComponent, ProjectsComponent } from '../components/';
 </script>
 
 <template>
-    <HeaderComponent />
-    <section>
+    <HeaderComponent data-aos="fade-up"/>
+    <section data-aos="fade-up">
       <LinksComponent />
     </section>
     <hr>
-    <section>
+    <section data-aos="fade-up">
       <AboutComponent />
     </section>
     <DivisorComponent section="Habilidades" icon-path="/img/skills.svg"/>
-    <SkillsComponent />
-    <div class="scroll-container">
+    <SkillsComponent data-aos="fade-up"/>
+    <div class="scroll-container" data-aos="fade-up">
       <p>
         Scroll
       </p>
@@ -24,9 +24,9 @@ CurriculumComponent, ProjectsComponent } from '../components/';
         <div class="scroll-ball"></div>
       </div>
     </div>
-    <CurriculumComponent />
+    <CurriculumComponent data-aos="fade-up" />
     <DivisorComponent section="Projetos" icon-path="/img/projects.svg"/>
-    <ProjectsComponent />
+    <ProjectsComponent data-aos="fade-up"/>
 </template>
 
 <style scoped>
