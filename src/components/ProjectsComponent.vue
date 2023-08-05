@@ -97,6 +97,14 @@ h1 {
     @apply w-[200px] h-[200px]
 }
 
+.carousel-item>header>figure>img {
+    @apply w-full h-full
+}
+
+.carousel-item article figure img {
+    @apply w-[1007px] h-auto
+}
+
 .carousel-item footer {
     @apply flex flex-col items-center justify-center
 }
