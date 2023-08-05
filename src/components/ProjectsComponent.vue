@@ -8,7 +8,7 @@ import { LinkIcon } from './';
 const color = ref('#1E96E6');
 
 const changeColor = () => {
-    color.value =  color.value == '#1E96E6' ? '#fff' : '#1E96E6';
+    color.value = color.value == '#1E96E6' ? '#fff' : '#1E96E6';
 }
 </script>
 
@@ -19,11 +19,7 @@ const changeColor = () => {
         </h1>
 
         <div class="carousel carousel-center">
-            <div 
-                class="carousel-item"
-                v-for="project in projectStore.projects"
-                :key="project.id"
-            >
+            <div class="carousel-item" v-for="project in projectStore.projects" :key="project.id" :id="`item${project.id}`">
                 <header>
                     <figure>
                         <img :src="project.image" alt="">
@@ -50,13 +46,17 @@ const changeColor = () => {
                     </a>
                 </footer>
             </div>
-
+        </div>
+        <div class="pages">
+                <a href="#item1">1</a>
+                <a href="#item2">2</a>
+                <a href="#item3">3</a>
+                <a href="#item4">4</a>
         </div>
     </section>
 </template>
 
 <style scoped>
-
 #projects {
     @apply flex flex-col items-center justify-center space-y-8
 }
@@ -115,5 +115,13 @@ h1 {
 
 .carousel-item footer p {
     @apply text-white text-sm font-roboto text-center
+}
+
+.pages {
+    @apply flex justify-center gap-2 py-2 bg-[#454ade] rounded-full mx-auto px-2
+}
+
+.pages a {
+    @apply bg-[#e3e3e3] rounded-full w-4 h-4 flex items-center justify-center text-[#454ade] font-bold text-sm
 }
 </style>
