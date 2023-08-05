@@ -124,4 +124,9 @@ h1 {
 .pages a {
     @apply bg-[#e3e3e3] rounded-full w-4 h-4 flex items-center justify-center text-[#454ade] font-bold text-sm
 }
+
+.pages a:hover {
+    @apply bg-[#454ade] text-white transition duration-500 ease-in-out
+}
+
 </style>
