@@ -126,11 +126,11 @@ h1 {
 }
 
 .pages {
-    @apply flex justify-center gap-2 py-2 bg-[#454ade] rounded-full mx-auto px-2
+    @apply flex justify-center gap-2 py-2 rounded-full mx-auto px-2
 }
 
 .pages a {
-    @apply bg-[#e3e3e3] rounded-full w-4 h-4 flex items-center justify-center text-[#454ade] font-bold text-sm
+    @apply bg-[#e3e3e3] rounded-full w-8 h-8 flex items-center justify-center text-[#454ade] font-bold text-sm
 }
 
 .pages a:hover {
