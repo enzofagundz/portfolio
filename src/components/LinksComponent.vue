@@ -26,7 +26,7 @@ import { WeatherComponent, GithubIcon, LinkedInIcon, CurriculumIcon } from './';
         </section>
         <router-link :to="{path: '/', hash: '#about'}" class="button-down" aria-label="Continue a rolagem do portfólio">
             <div class="icon-btn">
-                <img src="../../public/img/arrow-down.svg" alt="">
+                <img src="../../public/img/arrow-down.svg" alt="Imagem de uma flecha apontada para baixo">
             </div>
         </router-link>
 
@@ -51,6 +51,10 @@ ul {
     @apply w-[50px] h-[50px] bg-[#f26800] rounded-full flex items-center justify-center animate-bounce
 }
 
+.icon-btn img {
+    @apply w-[30px] h-[30px]
+}
+
 article {
     @apply flex flex-row items-center justify-between 
 }
@@ -63,8 +67,6 @@ article {
     section {
         @apply w-[300px] 
     }
-
-    
 }
 
 @media (min-width: 1024px) {

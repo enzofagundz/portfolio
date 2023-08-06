@@ -24,8 +24,8 @@
         Sou um profissional dedicado, criativo e comprometido com a qualidade dos meus projetos, que está sempre se atualizando e aprendendo coisas novas.
       </p>
       <router-link to="/curriculum">
-        <span>
-          <img src="../../public/img/arrow-horizontal.svg" alt="">
+        <span class="arrow-icon">
+          <img src="../../public/img/arrow-horizontal.svg" alt="Imagem de uma flecha apontando para a horizontal superior direita">
         </span>
         Ver currículo completo
       </router-link>
@@ -62,8 +62,11 @@ section div a {
   @apply border-2 border-[#e3e3e3] rounded-full px-2 py-3 text-base text-[#e3e3e3] font-raleway self-center flex items-center justify-center
 }
 
-section div a span {
-  @apply w-3 h-3 mr-2
+.arrow-icon {
+  @apply w-4 h-4 mr-2 ml-1 flex items-center justify-center
 }
 
+.arrow-icon img {
+  @apply w-[20px] h-[20px]
+}
 </style>
