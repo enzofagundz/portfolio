@@ -102,7 +102,7 @@ h1 {
 }
 
 .carousel-item article figure img {
-    @apply w-[200px] h-auto
+    @apply w-full h-auto
 }
 
 .carousel-item footer {
