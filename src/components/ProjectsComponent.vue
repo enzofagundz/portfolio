@@ -5,10 +5,10 @@ const projectStore = useProjectStore();
 
 import { LinkIcon } from './';
 
-const color = ref('#1E96E6');
+const color = ref('#1167A1');
 
 const changeColor = () => {
-    color.value = color.value == '#1E96E6' ? '#fff' : '#1E96E6';
+    color.value = color.value == '#1167A1' ? '#fff' : '#1167A1';
 }
 </script>
 
@@ -110,7 +110,7 @@ h1 {
 }
 
 .carousel-item footer a {
-    @apply flex flex-row items-center justify-center bg-white rounded-md text-[#1E96E6] font-roboto uppercase py-2 px-4 mt-2
+    @apply flex flex-row items-center justify-center bg-white rounded-md text-[#1167A1] font-roboto uppercase py-2 px-4 mt-2
 }
 
 .carousel-item footer a img {
@@ -118,7 +118,7 @@ h1 {
 }
 
 .carousel-item footer a:hover {
-    @apply bg-[#1E96E6] text-white transition duration-500 ease-in-out
+    @apply bg-[#1167A1] text-white transition duration-500 ease-in-out
 }
 
 .carousel-item footer p {
