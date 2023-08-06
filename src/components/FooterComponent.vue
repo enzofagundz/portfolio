@@ -6,7 +6,7 @@
     <footer>
         <div id="footer-container">
             <div>
-                <img src="../../public/img/logo-fateclins.webp" alt="Logo da Fatec Lins" class="fatec">
+                <img src="../../public/img/logo-fateclins.webp" alt="Logo da Fatec Lins" class="fatec" width="">
             </div>
             <div>
                 <div>
@@ -80,6 +80,6 @@ footer {
 }
 
 .fatec {
-    @apply w-[89px] h-[42px]
+    @apply w-full h-auto
 }
 </style>

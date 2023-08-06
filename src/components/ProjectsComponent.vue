@@ -94,7 +94,7 @@ h1 {
 }
 
 .carousel-item article figure {
-    @apply w-[200px] h-[200px]
+    @apply w-[200px] 
 }
 
 .carousel-item>header>figure>img {
