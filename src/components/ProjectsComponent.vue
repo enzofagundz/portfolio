@@ -66,7 +66,7 @@ h1 {
 }
 
 .carousel {
-    @apply bg-[#454ade] rounded-box max-w-xs overflow-hidden p-4
+    @apply bg-[#333CA5] rounded-box max-w-xs overflow-hidden p-4
 }
 
 .carousel-item {
@@ -130,11 +130,11 @@ h1 {
 }
 
 .pages a {
-    @apply bg-[#e3e3e3] rounded-full w-8 h-8 flex items-center justify-center text-[#454ade] font-bold text-sm
+    @apply bg-[#e3e3e3] rounded-full w-8 h-8 flex items-center justify-center text-[#333CA5] font-bold text-sm
 }
 
 .pages a:hover {
-    @apply bg-[#454ade] text-white transition duration-500 ease-in-out
+    @apply bg-[#333CA5] text-white transition duration-500 ease-in-out
 }
 
 </style>

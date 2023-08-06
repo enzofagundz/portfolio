@@ -10,7 +10,7 @@ CurriculumComponent, ProjectsComponent } from '../components/';
     <section data-aos="fade-up">
       <LinksComponent />
     </section>
-    <hr>
+    <hr data-aos="fade-up">
     <section data-aos="fade-up">
       <AboutComponent />
     </section>

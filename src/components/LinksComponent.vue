@@ -9,7 +9,7 @@ import { WeatherComponent, GithubIcon, LinkedInIcon, CurriculumIcon } from './';
             <ul>
                 <li>
                     <a href="https://github.com/enzofagundz" class="icon" target="_blank" aria-label="Confira meus projetos no Github">
-                        <GithubIcon color="#8b8bff" size="w-12 md:w-16 lg:w-18"/>
+                        <GithubIcon color="#9298DD" size="w-14 lg:w-18"/>
                     </a>
                 </li>
                 <li>

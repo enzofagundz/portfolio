@@ -22,7 +22,7 @@
                 <div>
                 </div>
                 <p>
-                    Desenvolvido por <a href="https://www.linkedin.com/in/enzofagundz/">Enzo Fagundes</a>
+                    Desenvolvido por <a href="https://www.linkedin.com/in/enzofagundz/" target="_blank">Enzo Fagundes</a>
                 </p>
             </section>
             <img src="/img/sistemas.webp" alt="Texto escrito 'Sistemas para Internet' curvado" class="course">

@@ -13,7 +13,7 @@
 
 <style scoped>
 div {
-    @apply w-12 h-12 flex flex-row justify-center items-center bg-[#8b8bff] rounded-full cursor-pointer
+    @apply w-12 h-12 flex flex-row justify-center items-center bg-[#9298DD] rounded-full cursor-pointer
 }
 
 svg {
