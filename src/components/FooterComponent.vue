@@ -22,7 +22,7 @@
                 <div>
                 </div>
                 <p>
-                    Desenvolvido por <a href="">Enzo Fagundes</a>
+                    Desenvolvido por <a href="https://www.linkedin.com/in/enzofagundz/">Enzo Fagundes</a>
                 </p>
             </section>
             <img src="../../public/img/sistemas.png" alt="">

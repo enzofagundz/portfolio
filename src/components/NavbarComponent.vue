@@ -21,7 +21,7 @@
                 </div>
             </div>
             <div class="navbar-center">
-                <a class="text-xl normal-case btn btn-ghost"><router-link to="/">Portfólio</router-link></a>
+                <p class="text-xl normal-case btn btn-ghost"><router-link to="/">Portfólio</router-link></p>
             </div>
             <div class="navbar-end">
             </div>
