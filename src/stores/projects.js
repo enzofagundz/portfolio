@@ -7,33 +7,33 @@ export const useProjectStore = defineStore('project', () => {
             id: 1,
             name: 'Make Your Burger',
             description: 'A burger builder app',
-            image: '/img/logomyb.png',
+            image: '/img/logomyb.webp',
             link: 'https://www.github.com/enzofagundz/make-your-burger',
-            mockup: '/img/mockup-myb.png'
+            mockup: '/img/mockup-myb.webp'
         },
         {
             id: 2,
             name: 'Pizza Queen',
             description: 'A pizza ordering app',
-            image: '/img/logopizzaqueen.png',
+            image: '/img/logopizzaqueen.webp',
             link: 'https://www.github.com/enzofagundz/pizza-queen',
-            mockup: '/img/mockup-pizzaqueen.png'
+            mockup: '/img/mockup-pizzaqueen.webp'
         },
         {
             id: 3,
             name: 'Seance Ecommerce',
             description: 'An ecommerce app',
-            image: '/img/logoseance.png',
+            image: '/img/logoseance.webp',
             link: 'https://www.github.com/enzofagundz/seance-ecommerce',
-            mockup: '/img/mockup-seance.png'
+            mockup: '/img/mockup-seance.webp'
         },
         {
             id: 4,
             name: 'CRUD Produto MVC',
             description: 'A CRUD app made with MVC pattern in PHP',
-            image: '/img/logocrud.png',
+            image: '/img/logocrud.webp',
             link: 'https://www.github.com/enzofagundz/crud-produtomvc',
-            mockup: '/img/mockup-crud.png'
+            mockup: '/img/mockup-crud.webp'
         }
     ]);
 

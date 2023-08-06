@@ -9,7 +9,7 @@ const informationStore = useInformationStore();
   <section>
     <header>
       <div>
-        <img src="../../public/img/profile.png" alt="">
+        <img src="../../public/img/profile.webp" alt="">
       </div>
       <aside>
         <h1>

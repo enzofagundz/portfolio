@@ -6,7 +6,7 @@
     <footer>
         <div id="footer-container">
             <div>
-                <img src="../../public/img/logo-fateclins.png" alt="">
+                <img src="../../public/img/logo-fateclins.webp" alt="">
             </div>
             <div>
                 <div>
@@ -25,7 +25,7 @@
                     Desenvolvido por <a href="https://www.linkedin.com/in/enzofagundz/">Enzo Fagundes</a>
                 </p>
             </section>
-            <img src="../../public/img/sistemas.png" alt="">
+            <img src="../../public/img/sistemas.webp" alt="">
         </div>
     </footer>
 </template>
@@ -68,7 +68,7 @@ footer {
 }
 
 #footer-container > section p {
-    @apply text-white text-xs font-gothic ml-1
+    @apply text-[#fff] text-xs font-gothic ml-1
 }
 
 #footer-container > section p a {

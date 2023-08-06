@@ -47,7 +47,7 @@ h1 {
 }
 
 span {
-    @apply text-[#333CA5]
+    @apply text-[#9298DD]
 }
 
 .item {

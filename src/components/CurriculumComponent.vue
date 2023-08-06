@@ -5,7 +5,7 @@
 <template>
   <section id="curriculum">
     <header>
-      <img src="../../public/img/folder-icon.png" alt="">
+      <img src="../../public/img/folder-icon.svg" alt="">
       <h1>
         Currículo
       </h1>
