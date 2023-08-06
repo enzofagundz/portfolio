@@ -26,7 +26,7 @@ import { WeatherComponent, GithubIcon, LinkedInIcon, CurriculumIcon } from './';
         </section>
         <router-link :to="{path: '/', hash: '#about'}" class="button-down" aria-label="Continue a rolagem do portfólio">
             <div class="icon-btn">
-                <img src="../../public/img/arrow-down.svg" alt="Imagem de uma flecha apontada para baixo">
+                <img src="/img/arrow-down.svg" alt="Imagem de uma flecha apontada para baixo">
             </div>
         </router-link>
         

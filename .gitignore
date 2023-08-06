@@ -18,6 +18,7 @@ coverage
 
 #Environment variables
 env.js
+.env
 
 # Editor directories and files
 .vscode/*
@@ -29,3 +30,6 @@ env.js
 *.njsproj
 *.sln
 *.sw?
+
+# Local Netlify folder
+.netlify

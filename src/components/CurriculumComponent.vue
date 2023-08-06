@@ -5,7 +5,7 @@
 <template>
   <section id="curriculum">
     <header>
-      <img src="../../public/img/folder-icon.svg" alt="">
+      <img src="/img/folder-icon.svg" alt="">
       <h1>
         Currículo
       </h1>
@@ -25,7 +25,7 @@
       </p>
       <router-link to="/curriculum">
         <span class="arrow-icon">
-          <img src="../../public/img/arrow-horizontal.svg" alt="Imagem de uma flecha apontando para a horizontal superior direita">
+          <img src="/img/arrow-horizontal.svg" alt="Imagem de uma flecha apontando para a horizontal superior direita">
         </span>
         Ver currículo completo
       </router-link>

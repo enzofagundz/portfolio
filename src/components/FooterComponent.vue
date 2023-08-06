@@ -6,7 +6,7 @@
     <footer>
         <div id="footer-container">
             <div>
-                <img src="../../public/img/logo-fateclins.webp" alt="Logo da Fatec Lins" class="fatec" width="">
+                <img src="/img/logo-fateclins.webp" alt="Logo da Fatec Lins" class="fatec" width="">
             </div>
             <div>
                 <div>
@@ -25,7 +25,7 @@
                     Desenvolvido por <a href="https://www.linkedin.com/in/enzofagundz/">Enzo Fagundes</a>
                 </p>
             </section>
-            <img src="../../public/img/sistemas.webp" alt="Texto escrito 'Sistemas para Internet' curvado" class="course">
+            <img src="/img/sistemas.webp" alt="Texto escrito 'Sistemas para Internet' curvado" class="course">
         </div>
     </footer>
 </template>

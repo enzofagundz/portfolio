@@ -1,8 +1,9 @@
 <script setup>
 import { reactive, onMounted } from 'vue';
-import env from '../../env';
 
-const API = `https://api.openweathermap.org/data/2.5/weather?lat=-21.698102001528408&lon=-49.750128943697966&lang=pt_br&appid=${env.API_URL}&units=metric`
+const apiKey = import.meta.env.VITE_API_URL;
+
+const API = `https://api.openweathermap.org/data/2.5/weather?lat=-21.698102001528408&lon=-49.750128943697966&lang=pt_br&appid=${apiKey}&units=metric`
 
 
 const weather = reactive({
