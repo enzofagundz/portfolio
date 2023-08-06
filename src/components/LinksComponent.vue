@@ -8,23 +8,23 @@ import { WeatherComponent, GithubIcon, LinkedInIcon, CurriculumIcon } from './';
         <section>
             <ul>
                 <li>
-                    <a href="https://github.com/enzofagundz" class="icon" target="_blank">
+                    <a href="https://github.com/enzofagundz" class="icon" target="_blank" aria-label="Confira meus projetos no Github">
                         <GithubIcon color="#8b8bff" size="w-12 md:w-16 lg:w-18"/>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/enzofagundz/" class="icon" target="_blank">
+                    <a href="https://www.linkedin.com/in/enzofagundz/" class="icon" target="_blank" aria-label="Confira meu perfil no LinkedIn">
                         <LinkedInIcon />
                     </a>
                 </li>
                 <li>
-                    <a href="/documents/curriculo.pdf" class="icon" download="Currículo Enzo Fagundes">
+                    <a href="/documents/curriculo.pdf" class="icon" download="Currículo Enzo Fagundes" aria-label="Faça o download do meu currículo">
                         <CurriculumIcon />
                     </a>
                 </li>
             </ul>
         </section>
-        <router-link :to="{path: '/', hash: '#about'}" class="button-down">
+        <router-link :to="{path: '/', hash: '#about'}" class="button-down" aria-label="Continue a rolagem do portfólio">
             <div class="icon-btn">
                 <img src="../../public/img/arrow-down.svg" alt="">
             </div>
