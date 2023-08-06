@@ -53,11 +53,11 @@ h2 {
 }
 
 button {
-  @apply bg-[#f26800] font-raleway text-white font-extralight text-lg px-4 py-2 rounded-full border border-[#e3e3e3] flex items-center
+  @apply bg-[#f26800] font-raleway text-white text-lg px-4 py-2 rounded-full border border-[#e3e3e3] flex items-center font-bold
 }
 
 button img {
-  @apply mr-2 rotate-90 w-3 h-auto
+  @apply mr-2 rotate-90 w-3 h-3
 }
 
 .btn-container {
