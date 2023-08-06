@@ -47,7 +47,7 @@ h1 {
 }
 
 span {
-    @apply text-[#3943B7]
+    @apply text-[#333CA5]
 }
 
 .item {
@@ -63,11 +63,11 @@ span {
 }
 
 .item:hover {
-    @apply border-[#3943B7] transition duration-500 ease-in-out
+    @apply border-[#333CA5] transition duration-500 ease-in-out
 }
 
 .item:hover div{
-    @apply text-[#3943B7] transition duration-500 ease-in-out
+    @apply text-[#333CA5] transition duration-500 ease-in-out
 }
 
 @media (min-width: 768px) {

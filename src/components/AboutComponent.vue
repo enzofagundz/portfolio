@@ -53,7 +53,7 @@ h2 {
 }
 
 button {
-  @apply bg-[#f26800] font-raleway text-white text-lg px-4 py-2 rounded-full border border-[#e3e3e3] flex items-center font-bold
+  @apply bg-[#333CA5] font-raleway text-[#f1f1f1] text-lg px-4 py-2 rounded-full border border-[#e3e3e3] flex items-center font-extralight
 }
 
 button img {

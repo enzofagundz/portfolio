@@ -39,7 +39,7 @@ section {
 }
 
 section header {
-  @apply border-b-2 border-[#454ade] font-unbounded text-base text-[#454ade] flex items-center justify-center p-4
+  @apply border-b-2 border-[#9298DD] font-unbounded text-base text-[#9298DD] flex items-center justify-center p-4
 }
 
 section header img {
@@ -51,7 +51,7 @@ section div {
 }
 
 section div h1 {
-  @apply text-2xl font-bold text-[#454ade] font-raleway mb-4
+  @apply text-2xl font-bold text-[#9298DD] font-raleway mb-4
 }
 
 section div p {
