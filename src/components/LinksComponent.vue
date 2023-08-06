@@ -29,7 +29,7 @@ import { WeatherComponent, GithubIcon, LinkedInIcon, CurriculumIcon } from './';
                 <img src="../../public/img/arrow-down.svg" alt="Imagem de uma flecha apontada para baixo">
             </div>
         </router-link>
-
+        
         <WeatherComponent />
     </article>
 </template>
