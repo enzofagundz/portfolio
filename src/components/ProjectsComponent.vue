@@ -21,12 +21,14 @@ const changeColor = () => {
         <div class="carousel carousel-center">
             <div class="carousel-item" v-for="project in projectStore.projects" :key="project.id" :id="`item${project.id}`">
                 <header>
-                    <figure>
-                        <img :src="project.image" alt="">
-                    </figure>
-                    <p>
-                        {{ project.name }}
-                    </p>
+                    <router-link :to="{name: 'projects', params: {id: project.id}}">
+                        <figure>
+                            <img :src="project.image" alt="">
+                        </figure>
+                        <p>
+                            {{ project.name }}
+                        </p>
+                    </router-link>
                 </header>
                 <article>
                     <p>
@@ -73,15 +75,15 @@ h1 {
     @apply p-4 rounded-lg border-2 border-[#cdcdcd] flex flex-col justify-between w-[225px] h-[400px] m-4 bg-gradient-to-br from-[#e8b854] to-[#ff0469]
 }
 
-.carousel-item header {
+.carousel-item header a {
     @apply flex flex-row items-center mb-2
 }
 
-.carousel-item header figure {
+.carousel-item header a figure {
     @apply w-8 h-8 mr-2
 }
 
-.carousel-item header p {
+.carousel-item header a p {
     @apply font-bold text-white text-sm
 }
 

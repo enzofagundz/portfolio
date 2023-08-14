@@ -57,7 +57,7 @@ onMounted(async () => {
 }
 
 h1 {
-  @apply text-4xl font-unbounded font-light flex flex-row justify-center
+  @apply text-xl font-unbounded font-light flex flex-row justify-center
 }
 
 p {
@@ -67,4 +67,5 @@ p {
 span {
   @apply text-xl
 }
+
 </style>

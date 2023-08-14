@@ -12,3 +12,4 @@ export { default as GithubIcon} from './icons/GithubIcon.vue';
 export { default as LinkedInIcon} from './icons/LinkedInIcon.vue';
 export { default as LinkIcon} from './icons/LinkIcon.vue';
 export { default as CurriculumIcon} from './icons/CurriculumIcon.vue';
+export { default as SectionComponent} from './SectionComponent.vue';

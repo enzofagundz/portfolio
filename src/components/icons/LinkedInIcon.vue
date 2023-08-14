@@ -10,7 +10,7 @@
   
 <style scoped>
 svg {
-    @apply w-12 h-12 cursor-pointer
+    @apply w-[50px] h-[50px] cursor-pointer
 }
 
 @media (min-width: 1024px) {
