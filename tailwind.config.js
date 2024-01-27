@@ -1,22 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    'index.html',
-    './src/**/*.vue'
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./error.vue",
   ],
   theme: {
     extend: {},
-    fontFamily: {
-      'sans': ['Anybody', 'sans-serif'],
-      'gothic': ['Carrois Gothic', 'sans-serif'],
-      'unbounded': ['Unbounded', 'sans-serif'],
-      'raleway': ['Raleway', 'sans-serif'],
-      'roboto': ['Roboto', 'sans-serif'],
-    },
-    screens: {
-      'xs': '475px'
-    }
   },
-  plugins: [require('daisyui')]
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["dracula"]
+  }
 }
-
