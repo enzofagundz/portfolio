@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.11.1",
+    "@pinia/nuxt": "^0.5.1",
     "daisyui": "^4.6.0",
     "nuxt": "^3.9.3",
     "vue": "^3.4.14",
