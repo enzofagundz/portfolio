@@ -1,10 +1,21 @@
 <template>
+    <Navbar />
     <Hero />
-    <div class="flex flex-col md:space-x-4 md:flex-row space-y-4 md:space-y-0">
-        <div class="md:w-1/3 flex flex-col space-y-4 w-full">
-            <Social />
-            <Weather />
-        </div>
+    <div class="flex space-x-4 justify-between">
+        <Social />
         <About />
     </div>
+    <Divider 
+        text="Habilidades"
+        icon="ri:star-fill"
+    />
+    <div class="flex space-x-4 justify-between h-1/2">
+        <Skills />
+        <Resume />
+    </div>
+    <Divider 
+        text="Projetos"
+        icon="ri:file-list-3-fill"
+    />
+    <Projects />
 </template>
