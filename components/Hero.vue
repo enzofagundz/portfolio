@@ -1,5 +1,5 @@
 <template>
-    <div class="hero bg-base-200 rounded-xl h-2/3 border-2 border-primary shadow-sm">
+    <div class="hero bg-base-200 rounded-3xl border-2 border-neutral">
         <div class="hero-content text-center h-60">
             <div class="max-w-md">
                 <p class="md:text-2xl text-lg">
@@ -13,7 +13,7 @@
     </div>
 </template>
 
-<script setup>
+<script lang="" setup>
 const typingText = ref('')
 onMounted(() => {
     const texts = ['Desenvolvedor Full Stack']
@@ -35,4 +35,6 @@ onMounted(() => {
         setTimeout(type, 300)
     })()
 })
+
+
 </script>
