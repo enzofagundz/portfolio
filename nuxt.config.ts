@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/google-fonts',
     'nuxt-icon',
-    'nuxt-swiper'
+    '@vueuse/nuxt'
   ],
   postcss: {
     plugins: {
@@ -20,7 +20,4 @@ export default defineNuxtConfig({
       'Tenor Sans': true,
     }
   },
-  swiper: {
-    modules: ['navigation', 'pagination', 'scrollbar'],
-  }
 })
