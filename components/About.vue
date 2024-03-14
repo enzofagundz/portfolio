@@ -6,9 +6,8 @@
             </h1>
         </div>
         <div class="bg-base-200 p-4 text-center">
-            <p class="text-lg">
-                Sou desenvolvedor web e apaixonado por tecnologia. Atualmente trabalho com a stack LaraVue, mas estou
-                sempre estudando novas tecnologias.
+            <p class="md:text-lg text-sm">
+                Sou um desenvolvedor esforçado. Estou buscando me aprimorar e aprender cada vez mais. Atualmente trabalho com Vue.JS, Laravel e MySQL.
             </p>
         </div>
     </div>

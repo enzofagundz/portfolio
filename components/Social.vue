@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <ul>
+    <div class="rounded-3xl w-1/3 border-2 border-neutral">
+        <ul class="space-y-4 md:space-y-0 md:space-x-4 bg-base-200 rounded-3xl py-4 px-2 flex flex-col items-center justify-center h-full md:flex-row">
             <li>
                 <a>
                     <Icon name="mingcute:github-fill" />
@@ -21,19 +21,11 @@
 </template>
 
 <style scoped>
-ul {
-    @apply space-x-4 bg-base-200 rounded-3xl py-4 px-2 flex items-center justify-center h-full
-}
-
 li {
     @apply btn btn-primary btn-circle
 }
 
 a {
     @apply p-3 flex items-center justify-center w-full h-full text-2xl
-}
-
-div {
-    @apply rounded-3xl shadow-sm w-1/3 border-2 border-neutral
 }
 </style>

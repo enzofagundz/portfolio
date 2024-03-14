@@ -1,7 +1,6 @@
 <template>
-    <div class="flex space-x-4">
-        <ProjectSearch />
-        <ProjectDropzone />
+    <div>
+
     </div>
 </template>
 
@@ -9,4 +8,4 @@
 
 </script>
 
-<style scoped></style>
+<style></style>

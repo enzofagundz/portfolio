@@ -1,7 +1,7 @@
 <template>
     <Navbar />
     <Hero />
-    <div class="flex space-x-4 justify-between">
+    <div class="flex space-x-2 justify-between flex-row">
         <Social />
         <About />
     </div>
@@ -9,7 +9,7 @@
         text="Habilidades"
         icon="ri:star-fill"
     />
-    <div class="flex space-x-4 justify-between h-1/2">
+    <div class="flex md:space-x-2 justify-between h-1/2 flex-col space-y-2 md:space-y-0 md:flex-row">
         <Skills />
         <Resume />
     </div>
