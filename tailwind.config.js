@@ -13,7 +13,10 @@ export default {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ["sunset"]
+    themes: [
+      "emerald",
+      "sunset"
+    ]
   }
 }
 
