@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/google-fonts',
     'nuxt-icon',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
   ],
   postcss: {
     plugins: {
