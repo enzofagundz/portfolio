@@ -1,5 +1,5 @@
 <template>
-    <div class="rounded-3xl mockup-browser bg-base-300 border-2 border-neutral">
+    <div class="rounded-2xl mockup-browser bg-base-300 shadow-md">
         <div class="mockup-browser-toolbar ">
             <h1 class="input">
                 Sobre mim

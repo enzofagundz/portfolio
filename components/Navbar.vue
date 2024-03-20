@@ -1,13 +1,17 @@
 <template>
-    <div class="navbar bg-base-200 border-2 border-neutral rounded-3xl">
+    <div class="navbar bg-base-200 rounded-2xl shadow-md">
         <div class="flex-1">
-            <a class="btn btn-ghost text-xl">
+            <NuxtLink to="/" class="btn btn-ghost text-xl">
                 enzo
-            </a>
+            </NuxtLink>
         </div>
         <div class="flex-none">
             <ul class="menu menu-horizontal px-1">
-                <li><a>Sobre</a></li>
+                <li>
+                    <NuxtLink to="/resume">
+                        Currículo
+                    </NuxtLink>
+                </li>
                 <li><a>Contato</a></li>
             </ul>
         </div>

@@ -1,6 +1,6 @@
 <template>
-    <div class="hero bg-base-200 rounded-3xl border-2 border-neutral">
-        <div class="hero-content text-center h-60">
+    <div class="hero bg-base-200 rounded-2xl shadow-md h-[50vh]">
+        <div class="hero-content text-center">
             <div class="max-w-md">
                 <p class="md:text-2xl text-lg">
                     Oi, eu sou o Enzo
