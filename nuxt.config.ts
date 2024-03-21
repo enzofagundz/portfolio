@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: "https://enzofagundz.netlify.app/",
+    url: "https://enzofagundz.vercel.app/",
     name: "Portfólio | Enzo Fagundes",
     description: "Portfólio de Enzo Fagundes, desenvolvedor web fullstack",
     defaultLocale: "pt-BR",
