@@ -7,7 +7,7 @@
                         height="auto" />
                 </a>
             </figure>
-            <p>Copyright © 2024 - All right reserved by Enzo Fagundes</p>
+            <p class="text-sm md:text-base">Copyright © 2024 - All right reserved by Enzo Fagundes</p>
             <div class="flex flex-row space-x-4">
                 <a href="https://www.linkedin.com/in/enzofagundz/"
                     class="w-8 h-8 bg-neutral rounded-full flex items-center justify-center" target="_blank"
