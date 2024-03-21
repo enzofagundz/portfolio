@@ -1,40 +1,18 @@
 <template>
-    <div class="hero bg-base-200 rounded-2xl shadow-md h-[50vh]">
-        <div class="hero-content text-center">
-            <div class="max-w-md">
-                <p class="md:text-2xl text-lg">
-                    Oi, eu sou o Enzo
-                </p>
-                <h1 class="md:text-4xl text-xl font-bold">
-                    {{ typingText }}
-                </h1>
-            </div>
+    <div class="space-y-12 md:w-3/4 lg:w-1/2">
+        <div class="h-20 w-20 bg-neutral rounded-full">
+            <img src="~/assets/img/enzo.webp" alt="Enzo" class="h-20 w-20 bg-neutral rounded-full" />
         </div>
+        <h1>
+            Olá! Sou o Enzo, um desenvolvedor web full-stack de Sabino, São Paulo, Brasil. Foco em criar aplicativos web
+            e móveis com as melhores práticas de desenvolvimento e design, enquanto continuo a aprender e compartilhar
+            conhecimento.
+        </h1>
     </div>
 </template>
 
-<script lang="" setup>
-const typingText = ref('')
-onMounted(() => {
-    const texts = ['Desenvolvedor Full Stack']
-    let count = 0
-    let index = 0
-    let currentText = ''
-    let letter = ''
-    ;(function type() {
-        if (count === texts.length) {
-            count = 0
-        }
-        currentText = texts[count]
-        letter = currentText.slice(0, ++index)
-        typingText.value = letter
-        if (letter.length === currentText.length) {
-            count++
-            index = 0
-        }
-        setTimeout(type, 300)
-    })()
-})
-
-
-</script>
+<style scoped>
+h1 {
+    @apply text-2xl lg:text-4xl font-medium text-left text-neutral dark:text-neutral-content;
+}
+</style>

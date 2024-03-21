@@ -1,23 +1,22 @@
 <template>
-    <div class="bg-base-200 rounded-2xl p-4 shadow-md w-1/2">
-        <div class="container space-y-4">
-            <h2 class="text-3xl font-semibold text-left text-primary">
-                <Icon name="mdi:book-open-page-variant" class="h-8 w-auto" />
-                <p>
-                    Minha formação
-                </p>
-            </h2>
-            <ul class="space-y-4 text-left md:text-lg ">
-                <li v-for="edu in education" :key="edu.id">
-                    <p class="font-semibold">
-                        {{ edu.course }} - {{ edu.institution }}
-                    </p>
-                    <p>
-                        {{ edu.period }}
-                    </p>
-                    <p v-if="edu.expectedConclusion">
-                        Previsão de conclusão: {{ edu.expectedConclusion }}
-                    </p>
+<div class="lg:w-1/2">
+        <h2 class="text-left md:text-lg lg:pb-6">
+            Formação Acadêmica:
+        </h2>
+        <div>
+            <ul class="space-y-6">
+                <li v-for="course in education.education" :key="course.id" class="flex items-center">
+                    <div class="flex-1">
+                        <span class="mt-2 text-base font-medium">
+                            {{ course.course }}
+                        </span>
+                        <p>
+                            {{ course.institution }} - {{ course.period }}
+                        </p>
+                        <p v-if="course.expectedConclusion">
+                            Previsão de conclusão: {{ course.expectedConclusion }}
+                        </p>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -25,6 +24,5 @@
 </template>
 
 <script lang="ts" setup>
-const educationStore = useEducationStore()
-const education = educationStore.education
+const education = useEducation()
 </script>

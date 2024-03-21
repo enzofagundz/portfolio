@@ -1,6 +1,5 @@
-import { defineStore } from "pinia";
-export const useEducationStore = defineStore('education', {
-    state: () => {
+export const useEducation = () => {
+    return useState('education', () => {
         return {
             education: [
                 { id: 1, course: "Ensino Médio", institution: "E. E. Prof. João Candido Fernandes Filho", period: "2017 - 2019", expectedConclusion: null },
@@ -8,8 +7,8 @@ export const useEducationStore = defineStore('education', {
                 { id: 3, course: "Sistemas para Internet", institution: "Fatec de Lins", period: "2021 - 2024", expectedConclusion: "junho/2024" }
             ] as EducationInfo[],
         }
-    }
-});
+    });
+}
 
 interface EducationInfo {
     id: number;

@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar bg-base-200 rounded-2xl shadow-md">
+    <div class="navbar">
         <div class="flex-1">
             <NuxtLink to="/" class="btn btn-ghost text-xl">
                 enzo
@@ -12,7 +12,6 @@
                         Currículo
                     </NuxtLink>
                 </li>
-                <li><a>Contato</a></li>
             </ul>
         </div>
     </div>

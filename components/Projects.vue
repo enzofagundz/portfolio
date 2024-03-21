@@ -1,36 +1,29 @@
 <template>
-    <div class="space-y-2 flex flex-col md:flex-row-reverse md:space-y-0 md:space-x-2">
-        <div class="container md:w-1/3 flex md:justify-end">
-            <ul class="flex space-x-2">
-                <li>
-                    <div class="badge badge-primary">primary</div>
-                </li>
-                <li>
-                    <div class="badge badge-primary">primary</div>
-                </li>
-                <li>
-                    <div class="badge badge-primary">primary</div>
+    <div class="lg:w-1/2">
+        <h2 class="text-left md:text-lg lg:pb-6">
+            Projetos:
+        </h2>
+        <div>
+            <ul>
+                <li v-for="project in projects.project" :key="project.id" class="flex items-center">
+                    <NuxtLink :to="`/projects/${project.id}`"
+                        class="flex items-center hover:bg-base-200 rounded-lg py-6 md:px-2">
+                        <div class="bg-neutral h-16 w-16 rounded-full"></div>
+                        <div class="flex-1 ml-4">
+                            <span class="mt-2 text-base md:text-xl">
+                                {{ project.title }}
+                            </span>
+                            <p>
+                                {{ project.description }}
+                            </p>
+                        </div>
+                    </NuxtLink>
                 </li>
             </ul>
-        </div>
-        <div class="container md:w-2/3">
-            <div class="card bg-base-200 border-2 border-neutral">
-                <div class="card-body">
-                    <h2 class="card-title">Card title!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-primary btn-circle">
-                            <Icon name="mdi:open-in-new" />
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </template>
 
 <script lang="ts" setup>
-
+const projects = useProject()
 </script>
-
-<style></style>

@@ -1,31 +1,41 @@
 <template>
-    <div class="rounded-2xl w-1/3 shadow-md bg-base-200">
-        <ul class="space-y-4 md:space-y-0 md:space-x-4 py-4 px-2 flex flex-col items-center justify-center h-full md:flex-row">
-            <li>
-                <a>
-                    <Icon name="mingcute:github-fill" />
-                </a>
-            </li>
-            <li>
-                <a>
-                    <Icon name="ri:linkedin-fill"></Icon>
-                </a>
-            </li>
-            <li>
-                <a>
-                    <Icon name="material-symbols:download"></Icon>
-                </a>
-            </li>
-        </ul>
+    <div class="lg:w-1/2">
+        <h2 class="text-left md:text-lg lg:pb-6">
+            Social:
+        </h2>
+        <div class="container">
+            <ul class="space-y-4">
+                <li>
+                    <a href="#" class="flex items-center hover:bg-base-200 rounded-lg py-6 md:px-2">
+                        <div class="bg-neutral h-16 w-16 rounded-full flex items-center justify-center">
+                            <Icon name="basil:linkedin-solid" class="w-8 h-8 md:w-12 md:h-12 text-base-100 dark:text-neutral-content" />
+                        </div>
+                        <div>
+                            <p class="ml-4 text-base md:text-xl">
+                                LinkedIn
+                            </p>
+                            <p class="ml-4 text-base md:text-xl">
+                                @enzofagundz
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center hover:bg-base-200 rounded-lg py-6 md:px-2">
+                        <div class="bg-neutral h-16 w-16 rounded-full flex items-center justify-center">
+                            <Icon name="brandico:github" class="w-8 h-8 md:w-12 md:h-12 text-base-100 dark:text-neutral-content" />
+                        </div>
+                        <div>
+                            <p class="ml-4 text-base md:text-xl">
+                                GitHub
+                            </p>
+                            <p class="ml-4 text-base md:text-xl">
+                                @enzofagundz
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
-
-<style scoped>
-li {
-    @apply btn btn-primary btn-circle
-}
-
-a {
-    @apply p-3 flex items-center justify-center w-full h-full text-2xl
-}
-</style>
