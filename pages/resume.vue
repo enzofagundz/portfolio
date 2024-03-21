@@ -1,12 +1,13 @@
 <template>
     <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:justify-between">
-        <div class="container">
+        <div class="container space-y-2">
             <h1 class="text-4xl font-bold">
                 Enzo Fagundes
             </h1>
             <h2 class="text-2xl font-medium">
                 Full Stack Developer
             </h2>
+            <Contact text-alignment="text-left" div-alignment="items-start" />
         </div>
         <div class="container flex items-center md:justify-end">
             <a 
@@ -19,7 +20,6 @@
         </div>
     </div>
     <div class="divider"></div>
-    <Contact text-alignment="text-left" div-alignment="items-start" />
     <div>
         <h3>
             Objetivos Profissionais:
