@@ -1,14 +1,14 @@
 <template>
     <div class="flex flex-col" :class="divAlignment">
-        <p class="text-sm md:text-base flex items-center" :class="textAlignment">
+        <p v-if="infos.email" class="text-sm md:text-base flex items-center" :class="textAlignment">
             <Icon name="ri:mail-fill" />
             <span>
-                {{ email }}
+                {{ infos.email }}
             </span>
         </p>
-        <p class="text-sm md:text-base flex items-center" :class="textAlignment">
+        <p class="text-sm md:text-base flex items-center" :class="textAlignment" v-if="infos.phoneNumber">
             <Icon name="ri:phone-fill" />
-            <span>+55 {{ phoneNumber }}</span>
+            <span>+55 {{ infos.phoneNumber }}</span>
         </p>
         <p class="text-sm md:text-base flex items-center" :class="textAlignment">
             <Icon name="mdi:location" />
@@ -26,8 +26,20 @@ defineProps({
     }
 })
 
-const phoneNumber = process.env.PHONE_NUMBER
-const email = process.env.EMAIL
+const infos = reactive({
+    phoneNumber: '',
+    email: ''
+}) as Info
+
+interface Info {
+    phoneNumber: string | undefined
+    email: string | undefined
+}
+
+onMounted(() => {
+    infos.phoneNumber = process.env.PHONE_NUMBER
+    infos.email = process.env.EMAIL
+})
 </script>
 
 <style scoped>
