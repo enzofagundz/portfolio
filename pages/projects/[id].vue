@@ -1,7 +1,7 @@
 <template>
     <div class="lg:w-1/2 space-y-10">
         <div class="container space-y-2">
-            <h1 class="text-3xl font-bold">
+            <h1 class="text-2xl lg:text-4xl font-medium text-left text-neutral dark:text-neutral-content">
                 {{ project.title }}
             </h1>
             <p class="text-gray-500 font-medium">
