@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from "url";
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/tailwind.css"],
@@ -33,5 +34,10 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: '%s - Portfólio | Enzo Fagundes',
     }
+  },
+  alias: {
+    "@server": fileURLToPath(new URL("./server", import.meta.url)),
+    "@api": fileURLToPath(new URL("./server/api", import.meta.url)),
+    // "@types": fileURLToPath(new URL("./types", import.meta.url)),
   }
 });
