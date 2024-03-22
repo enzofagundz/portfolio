@@ -1,24 +1,23 @@
 <template>
     <div class="lg:w-1/2 space-y-10">
         <div class="container space-y-2">
-            <h1 class="text-2xl lg:text-4xl font-medium text-left text-neutral dark:text-neutral-content">
+            <h1 class="text-2xl lg:text-4xl font-medium text-left text-neutral dark:text-base-content">
                 {{ project.title }}
             </h1>
-            <p class="text-gray-500 font-medium">
+            <p class="text-base font-medium">
                 {{ project.description }}
             </p>
-            <p class="text-gray-500">
+            <p class="text-base">
                 {{ project.semester }}
             </p>
             <div class="divider"></div>
         </div>
         <div class="container">
-            <h2 class="text-gray-500 font-medium mb-4">
+            <h2 class="text-base font-medium mb-4">
                 Tecnologias usadas:
             </h2>
             <ul>
-                <li v-for="(technology, index) in project.technologies" :key="index"
-                    class="text-gray-500 list-disc ml-4">
+                <li v-for="(technology, index) in project.technologies" :key="index" class="text-base list-disc ml-4">
                     <p>
                         {{ technology }}
                     </p>
@@ -26,7 +25,7 @@
             </ul>
         </div>
         <div class="container">
-            <h2 class="text-gray-500 font-medium mb-2">
+            <h2 class="text-base font-medium mb-2">
                 Você pode acessar o projeto em:
             </h2>
             <a :href="project.link" target="_blank" class="btn btn-neutral dark:btn-primary">
@@ -35,7 +34,7 @@
             </a>
         </div>
         <div class="container">
-            <h2 class="text-gray-500 font-medium mb-4">
+            <h2 class="text-base font-medium mb-4">
                 As áreas de conhecimento abordadas foram:
             </h2>
             <ul>
