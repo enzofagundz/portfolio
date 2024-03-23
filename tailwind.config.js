@@ -13,7 +13,7 @@ export default {
   },
   plugins: [require('daisyui')],
   daisyui: {
-    themes: ["light", "dark", "retro", "cyberpunk", "valentine", "aqua"],
+    themes: ["light", "dark", "retro", "cyberpunk", "valentine", "aqua", "business"],
     darkTheme: "dark",
   }
 }
