@@ -5,7 +5,7 @@
         </h2>
         <div>
             <ul>
-                <li v-for="project in projects.project" :key="project.id" class="flex items-center">
+                <li v-for="project in projectsComposable.projects" :key="project.id" class="flex items-center">
                     <NuxtLink :to="`/projects/${project.id}`"
                         class="flex items-center hover:bg-base-200 rounded-lg py-6 md:px-2">
                         <div class="bg-neutral h-16 w-16 rounded-full"></div>
@@ -25,5 +25,5 @@
 </template>
 
 <script lang="ts" setup>
-const projects = useProject()
+const projectsComposable = useProject()
 </script>

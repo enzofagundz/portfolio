@@ -1,6 +1,10 @@
 <template>
+    <h1>
+        Projeto
+    </h1>
+    <!-- 
     <div class="lg:w-1/2 space-y-10">
-        <div class="container space-y-2">
+            <div class="container space-y-2">
             <h1 class="text-2xl lg:text-4xl font-medium text-left text-neutral dark:text-base-content">
                 {{ project.title }}
             </h1>
@@ -45,16 +49,19 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </div> -->
 </template>
 
 <script lang="ts" setup>
+definePageMeta({
+    title: 'Projeto',
+    description: 'Conheça mais sobre o projeto',
+})
+
 const route = useRoute()
 const projectId = Number(route.params.id)
-const { project } = useProject(projectId)
-definePageMeta({
-    title: 'Projeto'
-})
+const project = await useFetch(`/api/projects/${projectId}`)
+console.log(project)
 </script>
 
 <style scoped></style>
