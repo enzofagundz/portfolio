@@ -9,7 +9,8 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@vueuse/nuxt",
     "@nuxt/image",
-    "@nuxtjs/seo"
+    "@nuxtjs/seo",
+    "@kgierke/nuxt-basic-auth",
   ],
   postcss: {
     plugins: {
@@ -34,4 +35,14 @@ export default defineNuxtConfig({
       titleTemplate: '%s - Portfólio | Enzo Fagundes',
     }
   },
+  basicAuth: {
+    enabled: true,
+    users: [
+      {
+        username: "admin",
+        password: "admin",
+      },
+    ],
+    allowedRoutes: ["^(?!.*dashboard).*$"],
+  }
 });
