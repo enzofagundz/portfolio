@@ -16,18 +16,27 @@
                 </p>
                 <div class="divider"></div>
             </div>
-            <div class="container">
-                <h2 class="text-base font-medium mb-4">
-                    Tecnologias usadas:
-                </h2>
-                <ul>
-                    <li v-for="(technology, index) in project.technologies" :key="index"
-                        class="text-base list-disc ml-4">
-                        <p>
-                            {{ technology }}
-                        </p>
-                    </li>
-                </ul>
+            <div class="container space-y-8">
+                <p class="text-base font-medium mb-4 text-justify indent-8">
+                    <ContentQuery path="/projects" :where="{ id: projectId }" v-slot="{ data }">
+                        <ContentRenderer :content="data">
+                            {{ data[0].description }}
+                        </ContentRenderer>
+                    </ContentQuery>
+                </p>
+                <div>
+                    <h2 class="text-base font-medium mb-4">
+                        Tecnologias usadas:
+                    </h2>
+                    <ul>
+                        <li v-for="(technology, index) in project.technologies" :key="index"
+                            class="text-base list-disc ml-4">
+                            <p>
+                                {{ technology }}
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="container">
                 <h2 class="text-base font-medium mb-2">
