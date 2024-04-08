@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/seo",
     "@kgierke/nuxt-basic-auth",
+    "@nuxt/content"
   ],
   postcss: {
     plugins: {
