@@ -78,7 +78,7 @@ export const useProject = () => {
                         "MySQL",
                         "Tailwind CSS",
                     ],
-                    link: "https://www.github.com/enzofagundz/payzone",
+                    link: "https://www.gitlab.com/enzofagundz/payzone",
                     areas: [
                         "Back-end",
                         "Banco de Dados",
