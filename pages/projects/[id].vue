@@ -5,7 +5,7 @@
         </div>
         <div class="container space-y-10" v-else>
             <div class="container space-y-2">
-                <h1 class="text-2xl lg:text-4xl font-medium text-left text-neutral dark:text-base-content">
+                <h1 class="text-2xl lg:text-4xl font-medium text-left text-base-content">
                     {{ project.title }}
                 </h1>
                 <p class="text-base font-medium">
@@ -52,7 +52,7 @@
                     As áreas de conhecimento abordadas foram:
                 </h2>
                 <ul>
-                    <li v-for="(area, index) in project.areas" :key="index" class="text-gray-500 list-disc ml-4">
+                    <li v-for="(area, index) in project.areas" :key="index" class="list-disc ml-4">
                         <p>
                             {{ area }}
                         </p>

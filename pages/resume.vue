@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:justify-between">
         <div class="container space-y-2">
-            <h1 class="text-2xl lg:text-4xl font-medium text-left text-neutral dark:text-base-content">
+            <h1 class="text-2xl lg:text-4xl font-medium text-left text-base-content">
                 Enzo Fagundes
             </h1>
             <h2 class="text-xl font-normal">

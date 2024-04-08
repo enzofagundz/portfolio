@@ -13,6 +13,6 @@
 
 <style scoped>
 h1 {
-    @apply text-2xl lg:text-4xl font-medium text-left text-neutral dark:text-base-content;
+    @apply text-2xl lg:text-4xl font-medium text-left text-base-content;
 }
 </style>

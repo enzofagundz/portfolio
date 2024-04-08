@@ -1,6 +1,6 @@
 <template>
     <div class="container space-y-8 flex items-center flex-col">
-        <h1 class="text-2xl lg:text-4xl font-medium text-left text-neutral dark:text-base-content">
+        <h1 class="text-2xl lg:text-4xl font-medium text-left text-base-content">
             Entre em contato
         </h1>
         <div class="container flex justify-center items-center flex-col space-y-4">
