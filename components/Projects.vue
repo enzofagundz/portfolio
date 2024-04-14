@@ -8,11 +8,10 @@
                 <li v-for="project in projectsComposable.projects.value" :key="project.id"
                     class="flex items-center hover:bg-base-200 py-6 md:px-2 rounded-lg cursor-pointer">
                     <NuxtLink :to="`/projects/${project.id}`" class="flex items-center">
-                        <div class="bg-neutral h-16 w-16 rounded-full"></div>
                         <div class="flex-1 ml-4">
-                            <span class="mt-2 text-base md:text-xl">
+                            <h3 class="mt-2 text-base md:text-xl">
                                 {{ project.title }}
-                            </span>
+                            </h3>
                             <p>
                                 {{ project.description }}
                             </p>
