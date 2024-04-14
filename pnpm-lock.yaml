@@ -14,9 +14,6 @@ dependencies:
   postcss:
     specifier: ^8.4.33
     version: 8.4.38
-  swiper:
-    specifier: ^11.0.7
-    version: 11.0.7
 
 devDependencies:
   '@kgierke/nuxt-basic-auth':
@@ -9805,11 +9802,6 @@ packages:
       csso: 5.0.5
       picocolors: 1.0.0
     dev: true
-
-  /swiper@11.0.7:
-    resolution: {integrity: sha512-cDfglW1B6uSmB6eB6pNmzDTNLmZtu5bWWa1vak0RU7fOI9qHjMzl7gVBvYSl34b0RU2N11HxxETJqQ5LeqI1cA==}
-    engines: {node: '>= 4.7.0'}
-    dev: false
 
   /system-architecture@0.1.0:
     resolution: {integrity: sha512-ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==}
