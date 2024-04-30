@@ -1,45 +1,44 @@
-import transporter from "~/server/utils/mail";
 import emailTemplate from "~/server/utils/templateEmail";
+import  { Resend } from 'resend';
 
 export default defineEventHandler(async (event) => {
-    const prisma = usePrisma();
+    let body;
     try {
-        const body = await readBody(event);
-        const { name, email, message } = body;
+        body = await readBody(event);
+    } catch (error) {
+        console.error('Error reading body:', error);
+        throw createError({ statusCode: 500, statusMessage: "Internal Server Error"});
+    }
 
-        if (!name || !email || !message) {
-            throw createError({ statusCode: 400, statusMessage: "Bad Request" });
-        }
+    const { name, email, message } = body;
 
-        const mailOptions = {
-            from: process.env.EMAIL_USER,
-            to: process.env.EMAIL_USER,
+    if (!name || !email || !message) {
+        throw createError({ statusCode: 400, statusMessage: "Bad Request" });
+    }
+
+    let contact;
+    try {
+        const resend = new Resend(process.env.API_RESEND_KEY);
+        contact = await resend.emails.send({
+            from: process.env.RESEND_EMAIL ?? '',
+            to: process.env.EMAIL_USER ?? '',
             subject: "New Contact Form Submission",
             html: emailTemplate({ name, email, message }),
-        }
-
-        const contact = await new Promise((resolve, reject) => {
-            transporter.sendMail(mailOptions, (error, info) => {
-                if (error) {
-                    reject(error);
-                } else {
-                    resolve(info);
-                }
-            })
-        })
-
-        if (!contact) {
-            throw createError({ statusCode: 500, statusMessage: "Internal Server Error" });
-        }
-
-        return {
-            statusCode: 201,
-            body: {
-                message: "Success! Your message has been sent.",
-                data: contact
-            }
-        }
+        });
     } catch (error) {
-        throw createError({ statusCode: 500, statusMessage: "Internal Server Error"})
+        console.error('Error sending email:', error);
+        throw createError({ statusCode: 500, statusMessage: "Internal Server Error"});
+    }
+
+    if (!contact) {
+        throw createError({ statusCode: 500, statusMessage: "Internal Server Error" });
+    }
+
+    return {
+        statusCode: 201,
+        body: {
+            message: "Success! Your message has been sent.",
+            data: contact
+        }
     }
 });
