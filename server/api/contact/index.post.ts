@@ -1,5 +1,5 @@
 import emailTemplate from "~/server/utils/templateEmail";
-import  { Resend } from 'resend';
+import { Resend } from 'resend';
 
 export default defineEventHandler(async (event) => {
     let body;
