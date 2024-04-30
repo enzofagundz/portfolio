@@ -47,10 +47,6 @@ watchEffect(() => {
     }
 })
 
-const { csrf } = useCsrf()
-console.log(csrf) // something like: mo4+MrFaeXP7fhAie0o2qw==:tLUaqtHW6evx/coGQVAhtGAR+v6cxgFtrqmkOsuAMag8PHRnMwpbGGUO0TPJjL+4
-
-
 async function submit() {
     try {
         // const { body, statusCode } = await $fetch('/api/contact', {
