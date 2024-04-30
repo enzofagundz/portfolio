@@ -1,4 +1,6 @@
-import { usePrisma } from "~/server/utils/PrismaClient";
+import transporter from "~/server/utils/mail";
+import emailTemplate from "~/server/utils/templateEmail";
+
 export default defineEventHandler(async (event) => {
     const prisma = usePrisma();
     try {
@@ -9,12 +11,21 @@ export default defineEventHandler(async (event) => {
             throw createError({ statusCode: 400, statusMessage: "Bad Request" });
         }
 
-        const contact = await prisma.contact.create({
-            data: {
-                name,
-                email,
-                message
-            }
+        const mailOptions = {
+            from: process.env.EMAIL_USER,
+            to: process.env.EMAIL_USER,
+            subject: "New Contact Form Submission",
+            html: emailTemplate({ name, email, message }),
+        }
+
+        const contact = await new Promise((resolve, reject) => {
+            transporter.sendMail(mailOptions, (error, info) => {
+                if (error) {
+                    reject(error);
+                } else {
+                    resolve(info);
+                }
+            })
         })
 
         if (!contact) {
@@ -24,7 +35,7 @@ export default defineEventHandler(async (event) => {
         return {
             statusCode: 201,
             body: {
-                message: "Contact created successfully",
+                message: "Success! Your message has been sent.",
                 data: contact
             }
         }
