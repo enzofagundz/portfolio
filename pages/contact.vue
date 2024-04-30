@@ -49,20 +49,7 @@ watchEffect(() => {
 
 async function submit() {
     try {
-        // const { body, statusCode } = await $fetch('/api/contact', {
-        //     method: 'POST',
-        //     body: JSON.stringify({
-        //         name: name.value,
-        //         email: email.value,
-        //         message: message.value
-        //     }),
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     }
-        // })
-
-        const { $csrfFetch } = useNuxtApp()
-        const { data } = await $csrfFetch('/api/login', { 
+        const { body, statusCode } = await $fetch('/api/contact', {
             method: 'POST',
             body: JSON.stringify({
                 name: name.value,
@@ -72,13 +59,8 @@ async function submit() {
             headers: {
                 'Content-Type': 'application/json'
             }
-        })
-
-
-
-        console.log(data);
-        
-
+        });
+    
         response.value = statusCode === 201 ? 'alert-success' : 'alert-error';
         response.icon = statusCode === 201 ? 'mdi:check-circle' : 'mdi:alert-circle';
         response.message = body.message;
