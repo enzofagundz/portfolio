@@ -11,7 +11,8 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/seo",
     "@kgierke/nuxt-basic-auth",
-    "@nuxt/content"
+    "@nuxt/content",
+    "nuxt-security"
   ],
   postcss: {
     plugins: {
@@ -45,5 +46,33 @@ export default defineNuxtConfig({
       },
     ],
     allowedRoutes: ["^(?!.*dashboard).*$"],
+  },
+  security: {
+    headers: {
+      crossOriginEmbedderPolicy: process.env.NODE_ENV === 'development' ? 'unsafe-none' : 'require-corp',
+    },
+  },
+  routeRules: {
+    '/api/contact': {
+      security: {
+        rateLimiter: {
+          tokensPerInterval: 100, // number of requests allowed before rate limiting
+          interval: 60000, // time in milliseconds after which the rate limiting will be reset
+          headers: true, // set response headers related to rate limiting
+          throwError: true, // throw an error when rate limit is exceeded
+        }
+      },
+      csurf: {
+        methodsToProtect: ['POST'],
+        cookie: {
+          domain: 'enzofagundz.vercel.app',
+          path: '/',
+          maxAge: 3600,
+          secure: true,
+        },
+        enabled: true,
+        cookieKey: 'csrfToken',
+      }
+    },
   }
 });

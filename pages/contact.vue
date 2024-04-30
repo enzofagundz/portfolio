@@ -47,9 +47,26 @@ watchEffect(() => {
     }
 })
 
+const { csrf } = useCsrf()
+console.log(csrf) // something like: mo4+MrFaeXP7fhAie0o2qw==:tLUaqtHW6evx/coGQVAhtGAR+v6cxgFtrqmkOsuAMag8PHRnMwpbGGUO0TPJjL+4
+
+
 async function submit() {
     try {
-        const { body, statusCode } = await $fetch('/api/contact', {
+        // const { body, statusCode } = await $fetch('/api/contact', {
+        //     method: 'POST',
+        //     body: JSON.stringify({
+        //         name: name.value,
+        //         email: email.value,
+        //         message: message.value
+        //     }),
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     }
+        // })
+
+        const { $csrfFetch } = useNuxtApp()
+        const { data } = await $csrfFetch('/api/login', { 
             method: 'POST',
             body: JSON.stringify({
                 name: name.value,
@@ -60,6 +77,11 @@ async function submit() {
                 'Content-Type': 'application/json'
             }
         })
+
+
+
+        console.log(data);
+        
 
         response.value = statusCode === 201 ? 'alert-success' : 'alert-error';
         response.icon = statusCode === 201 ? 'mdi:check-circle' : 'mdi:alert-circle';
