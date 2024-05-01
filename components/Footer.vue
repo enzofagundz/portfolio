@@ -3,11 +3,13 @@
         <aside class="flex flex-row justify-between w-full">
             <figure>
                 <a href="https://www.fateclins.edu.br/" target="_blank" rel="noopener noreferrer">
-                    <NuxtImg src="	https://www.fateclins.edu.br/web/img/logo-fateclins-white.png" alt="Logo" width="75"
-                        height="auto" />
+                    <img src="~/assets/img/fatec-lins.png"
+                        alt="Fatec Lins" 
+                        class="w-12 h-auto"
+                    />
                 </a>
             </figure>
-            <p class="text-sm md:text-base">Copyright © 2024 - All right reserved by Enzo Fagundes</p>
+            <p class="text-xs md:text-sn">Copyright © 2024 - All right reserved by Enzo Fagundes</p>
             <div class="flex flex-row space-x-4">
                 <a href="https://www.linkedin.com/in/enzofagundz/"
                     class="w-8 h-8 bg-neutral rounded-full flex items-center justify-center" target="_blank"
