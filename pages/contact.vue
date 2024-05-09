@@ -1,5 +1,5 @@
 <template>
-    <div class="container space-y-8 flex items-center flex-col">
+    <div class="container space-y-8 flex items-center flex-col justify-between">
         <h1 class="text-2xl lg:text-4xl font-medium text-left text-base-content">
             Entre em contato
         </h1>
