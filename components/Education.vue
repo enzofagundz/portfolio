@@ -1,13 +1,13 @@
 <template>
-<div class="lg:w-1/2">
-        <h2 class="text-left md:text-lg lg:pb-6">
+<div class="">
+        <h2 class="text-left text-lg mb-4 font-semibold">
             Formação Acadêmica:
         </h2>
         <div>
             <ul class="space-y-6">
                 <li v-for="course in education.education" :key="course.id" class="flex items-center">
-                    <div class="flex-1">
-                        <span class="mt-2 text-base font-medium">
+                    <div class="flex-1 text-sm">
+                        <span class="mt-2 font-medium">
                             {{ course.course }}
                         </span>
                         <p>

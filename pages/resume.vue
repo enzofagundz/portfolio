@@ -11,7 +11,7 @@
         </div>
         <div class="container flex items-center md:justify-end">
             <a 
-                href="~/assets/curriculo-enzo-fagundes.pdf" 
+                href="/pdf/curriculo-enzo-fagundes.pdf" 
                 download="curriculo-enzo-fagundes.pdf" 
                 class="btn btn-primary">
                 <Icon name="heroicons-solid:document-download" class="w-6 h-6" />
@@ -21,34 +21,30 @@
     </div>
     <div class="divider"></div>
     <div>
-        <h3>
+        <h3 class="text-lg font-semibold mb-4">
             Objetivos Profissionais:
         </h3>
-        <p>
+        <p class="text-sm">
             Trabalhar com desenvolvimento de software, com foco em qualidade e boas práticas de programação.
         </p>
     </div>
     <Education />
     <WorkExperience />
     <div>
-        <h3>
+        <h3 class="text-lg mb-4 font-semibold">
             Idiomas
         </h3>
-        <p>
-            Português - Nativo
-        </p>
-        <p>
-            Inglês - B1
-        </p>
+        <div class="text-sm">
+            <p>
+                Português - Nativo
+            </p>
+            <p>
+                Inglês - B1
+            </p>
+        </div>
     </div>
     <Activity />
 </template>
-
-<style scoped>
-h3 {
-    @apply text-left md:text-lg lg:pb-6;
-}
-</style>
 
 <script lang="ts" setup>
 definePageMeta({

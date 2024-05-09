@@ -6,6 +6,8 @@ type Project = {
     readonly technologies: readonly string[];
     readonly link: string;
     readonly areas: readonly string[];
+    readonly folder?: string;
+    readonly quantityImages?: number;
 };
 
 export const useProject = () => {
@@ -22,7 +24,9 @@ export const useProject = () => {
             link: "https://www.github.com/enzofagundz/seminario-iot",
             areas: [
                 "Front-end",
-            ]
+            ],
+            folder: "seminario-iot",
+            quantityImages: 4,
         },
         {
             id: 2,
@@ -40,7 +44,9 @@ export const useProject = () => {
                 "Front-end",
                 "Design",
                 "UI/UX",
-            ]
+            ],
+            folder: "pizza-queen",
+            quantityImages: 3,
         },
         {
             id: 3,
@@ -60,11 +66,13 @@ export const useProject = () => {
                 "Design",
                 "UI/UX",
                 "Acessibilidade",
-            ]
+            ],
+            folder: "seance-ecommerce",
+            quantityImages: 5,
         },
         {
             id: 4,
-            title: "Projeto de Banco de Dados para Gerenciamento de Atletas de Futebol",
+            title: "Banco de Dados para Gerenciamento de Atletas de Futebol",
             description: "Projeto de desenvolvimento de um banco de dados para gerenciamento de atletas de futebol",
             semester: "4º semestre",
             technologies: [
@@ -73,7 +81,9 @@ export const useProject = () => {
             link: "https://www.github.com/enzofagundz/bd-gerenciamento-atletas-futebol",
             areas: [
                 "Banco de Dados",
-            ]
+            ],
+            folder: "bd-gerenciamento-atletas-futebol",
+            quantityImages: 0,
         },
         {
             id: 5,
@@ -90,7 +100,9 @@ export const useProject = () => {
             areas: [
                 "Back-end",
                 "Banco de Dados",
-            ]
+            ],
+            folder: "payzone",
+            quantityImages: 6,
         }
     ] as const);
 

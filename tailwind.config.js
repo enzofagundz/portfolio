@@ -11,10 +11,12 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui')],
+  plugins: [
+    require('daisyui')
+  ],
   daisyui: {
-    themes: ["light", "dark", "retro", "cyberpunk", "valentine", "aqua", "business"],
-    darkTheme: "dark",
+    themes: ["light", "black", "retro", "cyberpunk", "valentine", "aqua", "business"],
+    darkTheme: "black",
   }
 }
 

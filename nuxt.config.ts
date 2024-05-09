@@ -23,6 +23,8 @@ export default defineNuxtConfig({
     families: {
       "Tenor Sans": true,
       Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      Montserrat: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900]
     },
   },
   site: {

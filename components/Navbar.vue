@@ -13,11 +13,6 @@
                     </NuxtLink>
                 </li>
                 <li>
-                    <NuxtLink to="/contact">
-                        Contato
-                    </NuxtLink>
-                </li>
-                <li>
                     <ThemeControl />
                 </li>
             </ul>

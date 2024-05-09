@@ -1,5 +1,5 @@
 <template>
-    <div class="lg:w-1/2">
+    <div>
         <div v-if="!project" class="container">
             "Carregando...
         </div>
@@ -17,7 +17,7 @@
                 <div class="divider"></div>
             </div>
             <div class="container space-y-8">
-                <p class="text-base font-medium mb-4 text-justify indent-8">
+                <p class="text-base mb-4 text-justify indent-8">
                     <ContentQuery path="/projects" :where="{ id: projectId }" v-slot="{ data }">
                         <ContentRenderer :content="data">
                             {{ data[0].description }}
@@ -25,7 +25,7 @@
                     </ContentQuery>
                 </p>
                 <div>
-                    <h2 class="text-base font-medium mb-4">
+                    <h2 class="text-lg font-medium mb-4">
                         Tecnologias usadas:
                     </h2>
                     <ul>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="container">
-                <h2 class="text-base font-medium mb-2">
+                <h2 class="text-lg font-medium mb-4">
                     Você pode acessar o projeto em:
                 </h2>
                 <a :href="project.link" target="_blank" class="btn btn-neutral dark:btn-primary">
@@ -48,7 +48,7 @@
                 </a>
             </div>
             <div class="container">
-                <h2 class="text-base font-medium mb-4">
+                <h2 class="text-lg font-medium mb-4">
                     As áreas de conhecimento abordadas foram:
                 </h2>
                 <ul>
@@ -58,6 +58,12 @@
                         </p>
                     </li>
                 </ul>
+            </div>
+            <div class="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box"
+                v-if="project.quantityImages > 0">
+                <div class="carousel-item w-full flex justify-center" v-for="n in project.quantityImages" :key="n">
+                    <LazyNuxtImg :src="`/img/projects/${project.folder}/${n}.png`" alt="Imagem do projeto" />
+                </div>
             </div>
         </div>
     </div>

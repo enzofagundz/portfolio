@@ -1,6 +1,6 @@
 <template>
-    <div class="lg:w-1/2">
-        <h2 class="text-left md:text-lg lg:pb-6">
+    <div>
+        <h2 class="text-left text-lg mb-4 font-semibold">
             Atividades Complementares:
         </h2>
         <div>
@@ -9,7 +9,7 @@
                     <h3 class="text-left font-medium">
                         {{ act.title }}
                     </h3>
-                    <p class="text-left md:text-base">
+                    <p class="text-left text-sm">
                         {{ act.institution }}
                     </p>
                 </li>
