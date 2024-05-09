@@ -5,7 +5,7 @@
         </h1>
         <div class="container space-y-4 max-w-xs">
             <Alert v-show="success" />
-            <form :action="formsquashKey" method="POST" class="space-y-4">
+            <form :action="`https://formsquash.io/f/${formsquashKey}`" method="POST" class="space-y-4">
                 <label class="input input-bordered flex items-center gap-2">
                     Nome
                     <input type="text" class="grow" name="name" />
@@ -34,7 +34,7 @@ import { useRoute } from 'vue-router'
 import { ref } from 'vue'
 const route = useRoute()
 const success = ref(route.query.success ? true : false)
-const formsquashKey = process.env.FORMSQUASH_KEY
+const formsquashKey = ref(import.meta.env.VITE_FORMSQUASH_KEY)
 </script>
 
 <style scoped>
