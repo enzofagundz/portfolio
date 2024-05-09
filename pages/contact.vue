@@ -3,22 +3,22 @@
         <h1 class="text-2xl lg:text-4xl font-medium text-left text-base-content">
             Entre em contato
         </h1>
-        <div class="container flex justify-center items-center flex-col space-y-4">
-            <Alert :response="response" />
-            <form class="space-y-4" @submit.prevent="submit">
+        <div class="container space-y-4 max-w-xs">
+            <Alert v-show="success" />
+            <form :action="formsquashKey" method="POST" class="space-y-4">
                 <label class="input input-bordered flex items-center gap-2">
                     Nome
-                    <input type="text" class="grow" name="name" v-model="name" />
+                    <input type="text" class="grow" name="name" />
                 </label>
                 <label class="input input-bordered flex items-center gap-2">
                     E-mail
-                    <input type="text" class="grow" name="email" v-model="email" />
+                    <input type="text" class="grow" name="email" />
                 </label>
                 <label class="flex items-center gap-2">
                     <textarea placeholder="Mensagem"
-                        class="textarea textarea-bordered textarea-lg w-full max-w-xs resize-none"
-                        v-model="message"></textarea>
+                        class="textarea textarea-bordered textarea-lg w-full max-w-xs resize-none"></textarea>
                 </label>
+                <input type="hidden" name="_gotcha">
                 <div class="flex items-center justify-center">
                     <button class="btn btn-primary btn-block" type="submit">
                         Enviar
@@ -30,46 +30,11 @@
 </template>
 
 <script lang="ts" setup>
-const name = ref('');
-const email = ref('');
-const message = ref('');
-const response = reactive({
-    value: '',
-    icon: '',
-    message: ''
-})
-
-watchEffect(() => {
-    if (response.value) {
-        name.value = '';
-        email.value = '';
-        message.value = '';
-    }
-})
-
-async function submit() {
-    try {
-        const { body, statusCode } = await $fetch('/api/contact', {
-            method: 'POST',
-            body: JSON.stringify({
-                name: name.value,
-                email: email.value,
-                message: message.value
-            }),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-    
-        response.value = statusCode === 201 ? 'alert-success' : 'alert-error';
-        response.icon = statusCode === 201 ? 'mdi:check-circle' : 'mdi:alert-circle';
-        response.message = body.message;
-    } catch (error) {
-        response.value = 'alert-warning';
-        response.icon = 'mdi:alert-circle';
-        response.message = "Ocorreu um erro ao enviar a mensagem. Tente novamente mais tarde."
-    }
-}
+import { useRoute } from 'vue-router'
+import { ref } from 'vue'
+const route = useRoute()
+const success = ref(route.query.success ? true : false)
+const formsquashKey = process.env.FORMSQUASH_KEY
 </script>
 
 <style scoped>
