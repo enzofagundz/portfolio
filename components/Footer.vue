@@ -3,7 +3,7 @@
         <aside class="flex flex-row justify-between w-full">
             <figure>
                 <a href="https://www.fateclins.edu.br/" target="_blank" rel="noopener noreferrer">
-                    <img src="~/assets/img/fatec-lins.png" alt="Logo da Fatec Lins" class="w-12 h-auto" />
+                    <SvgoFatecLins class="text-[4em] text-primary-content" />
                 </a>
             </figure>
             <p class="text-xs md:text-sm text-primary-content">Copyright © 2024 - All right reserved by Enzo Fagundes</p>

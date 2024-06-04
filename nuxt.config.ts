@@ -11,8 +11,12 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/seo",
     "@kgierke/nuxt-basic-auth",
-    "@nuxt/content"
+    "@nuxt/content",
+    "nuxt-svgo",
   ],
+  svgo: {
+    autoImportPath: "./assets/img/"
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
