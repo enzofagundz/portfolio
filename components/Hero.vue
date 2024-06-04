@@ -27,7 +27,7 @@
 
 <style scoped>
 h2 {
-    @apply text-base font-medium;
+    @apply text-base font-medium text-justify;
 }
 
 h1 {
