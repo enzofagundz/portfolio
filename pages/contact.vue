@@ -8,11 +8,11 @@
             <form :action="`https://formsquash.io/f/${formsquashKey}`" method="POST" class="space-y-4">
                 <label class="input input-bordered flex items-center gap-2">
                     Nome
-                    <input type="text" class="grow" name="name" />
+                    <input type="text" class="grow text-sm" name="name" />
                 </label>
                 <label class="input input-bordered flex items-center gap-2">
                     E-mail
-                    <input type="text" class="grow" name="email" v-model="email" @blur="validateEmail"/>
+                    <input type="text" class="grow text-sm" name="email" v-model="email" @blur="validateEmail"/>
                 </label>
                 <label class="flex items-center gap-2">
                     <textarea placeholder="Mensagem"
