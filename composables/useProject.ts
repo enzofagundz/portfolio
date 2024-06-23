@@ -4,7 +4,7 @@ type Project = {
     readonly description: string;
     readonly semester: string;
     readonly technologies: readonly string[];
-    readonly link: string;
+    readonly link: string | null;
     readonly areas: readonly string[];
     readonly folder?: string;
     readonly quantityImages?: number;
@@ -103,6 +103,26 @@ export const useProject = () => {
             ],
             folder: "payzone",
             quantityImages: 6,
+        },
+        {
+            id: 6,
+            title: "Servidor Gitlab para controle de versão de projetos",
+            description: "Projeto de instalação e configuração do GitLab para controle de versão e colaboração em projetos de software",
+            semester: "6º semestre",
+            link: null,
+            technologies: [
+                "GitLab",
+                "Bitnami",
+                "Oracle VM VirtualBox",
+                "SSH"
+            ],
+            areas: [
+                "Controle de Versão",
+                "DevOps",
+                "Colaboração em Equipe"
+            ],
+            folder: "servidor-gitlab",
+            quantityImages: 0
         }
     ] as const);
 

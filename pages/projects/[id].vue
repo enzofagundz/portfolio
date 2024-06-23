@@ -38,7 +38,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="container">
+            <div class="container" v-show="project.link">
                 <h2 class="text-lg font-medium mb-4">
                     Você pode acessar o projeto em:
                 </h2>

@@ -1,0 +1,4 @@
+{
+    "id": 6,
+    "description": "Durante a disciplina de Tópicos Especiais em Sistemas para Internet III, sob a orientação do professor Rafael Hamamura, instalamos e configuramos o GitLab utilizando a imagem Bitnami no Oracle VM VirtualBox. Criamos perfis de usuários, configuramos um projeto, habilitamos SSH para integração com repositórios locais, e implementamos controle de versão e colaboração em equipe. Este processo destacou a importância do GitLab como uma ferramenta essencial para desenvolvimento colaborativo e gestão de projetos de software."
+}
