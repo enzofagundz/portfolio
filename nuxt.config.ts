@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/tailwind.css"],
+
+  hooks: {
+    'prerender:routes' ({ routes }) {
+      routes.clear();
+    }
+  },
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@pinia/nuxt",
@@ -13,16 +20,20 @@ export default defineNuxtConfig({
     "@kgierke/nuxt-basic-auth",
     "@nuxt/content",
     "nuxt-svgo",
+    "@nuxtjs/robots"
   ],
+
   svgo: {
     autoImportPath: "./assets/img/"
   },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   googleFonts: {
     families: {
       "Tenor Sans": true,
@@ -31,17 +42,20 @@ export default defineNuxtConfig({
       Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900]
     },
   },
+
   site: {
     url: "https://enzofagundz.vercel.app/",
     name: "Portfólio | Enzo Fagundes",
     description: "Portfólio de Enzo Fagundes, desenvolvedor web fullstack",
     defaultLocale: "pt-BR",
   },
+
   app: {
     head: {
       titleTemplate: '%s - Portfólio | Enzo Fagundes',
     }
   },
+
   basicAuth: {
     enabled: true,
     users: [
@@ -52,4 +66,6 @@ export default defineNuxtConfig({
     ],
     allowedRoutes: ["^(?!.*dashboard).*$"],
   },
+
+  compatibilityDate: "2024-07-29",
 });
