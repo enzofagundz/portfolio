@@ -24,16 +24,16 @@
     "nuxt": "^3.12.4",
     "nuxt-icon": "^0.6.10",
     "typescript": "^5.5.4",
-    "vue": "^3.4.34",
-    "vue-router": "^4.4.0",
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.2",
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
     "@prisma/client": "^5.17.0",
     "@vercel/speed-insights": "^1.0.12",
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.20",
     "nuxt-svgo": "^4.0.2",
-    "postcss": "^8.4.40",
+    "postcss": "^8.4.41",
     "resend": "^3.5.0",
     "sharp": "^0.33.4"
   }
