@@ -1,12 +1,12 @@
 <template>
-    <Hero />
-    <Skills />
-    <Projects />
-    <Social />
+  <Hero />
+  <Skills />
+  <Projects />
+  <Social />
 </template>
 
 <script lang="ts" setup>
 definePageMeta({
-    title: 'Home'
-})
+  title: "Home",
+});
 </script>

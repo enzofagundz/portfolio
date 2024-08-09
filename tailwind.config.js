@@ -11,13 +11,17 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [
-    require('daisyui')
-  ],
+  plugins: [require("daisyui")],
   daisyui: {
-    themes: ["corporate", "black", "retro", "cyberpunk", "valentine", "business"],
+    themes: [
+      "corporate",
+      "black",
+      "retro",
+      "cyberpunk",
+      "valentine",
+      "business",
+    ],
     darkTheme: "black",
-    lightTheme: "corporate"
-  }
-}
-
+    lightTheme: "corporate",
+  },
+};

@@ -23,6 +23,7 @@
     "daisyui": "^4.12.10",
     "nuxt": "^3.12.4",
     "nuxt-icon": "^0.6.10",
+    "prettier": "3.3.3",
     "typescript": "^5.5.4",
     "vue": "^3.4.35",
     "vue-router": "^4.4.2",

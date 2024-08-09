@@ -4,9 +4,9 @@ export default defineNuxtConfig({
   css: ["~/assets/css/tailwind.css"],
 
   hooks: {
-    'prerender:routes' ({ routes }) {
+    "prerender:routes"({ routes }) {
       routes.clear();
-    }
+    },
   },
 
   modules: [
@@ -20,11 +20,11 @@ export default defineNuxtConfig({
     "@kgierke/nuxt-basic-auth",
     "@nuxt/content",
     "nuxt-svgo",
-    "@nuxtjs/robots"
+    "@nuxtjs/robots",
   ],
 
   svgo: {
-    autoImportPath: "./assets/img/"
+    autoImportPath: "./assets/img/",
   },
 
   postcss: {
@@ -39,7 +39,7 @@ export default defineNuxtConfig({
       "Tenor Sans": true,
       Inter: [100, 200, 300, 400, 500, 600, 700, 800, 900],
       Montserrat: [100, 200, 300, 400, 500, 600, 700, 800, 900],
-      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900]
+      Poppins: [100, 200, 300, 400, 500, 600, 700, 800, 900],
     },
   },
 
@@ -52,8 +52,8 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      titleTemplate: '%s - Portfólio | Enzo Fagundes',
-    }
+      titleTemplate: "%s - Portfólio | Enzo Fagundes",
+    },
   },
 
   basicAuth: {
