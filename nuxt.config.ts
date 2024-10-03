@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ["~/assets/css/tailwind.css"],
-  ssr: false,
+  ssr: true,
   hooks: {
     "prerender:routes"({ routes }) {
       routes.clear();
